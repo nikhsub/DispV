@@ -1,0 +1,269 @@
+{
+  "ADDEDBF": {},
+  "ADDEDDIR": {},
+  "BFCACHE": {
+    "config/BuildFile.xml": 1694787436.0,
+    "src/DisplacedDJ_MiniAOD/DJAnalyzerMini/BuildFile.xml": 1699551006.954031,
+    "src/DisplacedDJ_MiniAOD/DJAnalyzerMini/plugins/BuildFile.xml": 1699551049.719438,
+    "src/DisplacedDJ_MiniAOD/DataFormats/BuildFile.xml": 1699551050.830852
+  },
+  "CLASSDATA": [
+    [
+      [
+        "",
+        "Project"
+      ],
+      [
+        "BigProducts",
+        "SubSystem"
+      ],
+      [
+        "",
+        "BigProduct"
+      ],
+      [
+        "",
+        "donothing"
+      ]
+    ],
+    [
+      [
+        "",
+        "Project"
+      ],
+      [
+        "",
+        "SubSystem"
+      ],
+      [
+        "",
+        "Package"
+      ],
+      [
+        "scripts",
+        "scripts"
+      ]
+    ],
+    [
+      [
+        "",
+        "Project"
+      ],
+      [
+        "Documentation",
+        "Documentation"
+      ],
+      [
+        "",
+        "doc"
+      ]
+    ],
+    [
+      [
+        "",
+        "Project"
+      ],
+      [
+        "",
+        "SubSystem"
+      ],
+      [
+        "",
+        "Package"
+      ],
+      [
+        "src",
+        "library"
+      ]
+    ],
+    [
+      [
+        "",
+        "Project"
+      ],
+      [
+        "",
+        "SubSystem"
+      ],
+      [
+        "",
+        "Package"
+      ],
+      [
+        "bin",
+        "binary"
+      ]
+    ],
+    [
+      [
+        "",
+        "Project"
+      ],
+      [
+        "",
+        "SubSystem"
+      ],
+      [
+        "",
+        "Package"
+      ],
+      [
+        "test",
+        "test"
+      ]
+    ],
+    [
+      [
+        "",
+        "Project"
+      ],
+      [
+        "",
+        "SubSystem"
+      ],
+      [
+        "",
+        "Package"
+      ],
+      [
+        "plugins",
+        "plugins"
+      ]
+    ],
+    [
+      [
+        "",
+        "Project"
+      ],
+      [
+        "",
+        "SubSystem"
+      ],
+      [
+        "",
+        "Package"
+      ],
+      [
+        "python",
+        "python"
+      ]
+    ],
+    [
+      [
+        "",
+        "Project"
+      ],
+      [
+        "LCG",
+        "SubSystem"
+      ],
+      [
+        "",
+        "Package"
+      ],
+      [
+        "tests",
+        "binary"
+      ]
+    ]
+  ],
+  "CLASSMAP": {
+    "config": [
+      "Project",
+      "config",
+      ""
+    ],
+    "src": [
+      "Project",
+      "src",
+      ""
+    ],
+    "src/DisplacedDJ_MiniAOD": [
+      "SubSystem",
+      "src/DisplacedDJ_MiniAOD",
+      ""
+    ],
+    "src/DisplacedDJ_MiniAOD/DJAnalyzerMini": [
+      "Package",
+      "src/DisplacedDJ_MiniAOD/DJAnalyzerMini",
+      ""
+    ],
+    "src/DisplacedDJ_MiniAOD/DJAnalyzerMini/NewCFG": [
+      "Package",
+      "src/DisplacedDJ_MiniAOD/DJAnalyzerMini",
+      "NewCFG"
+    ],
+    "src/DisplacedDJ_MiniAOD/DJAnalyzerMini/crab_projects": [
+      "Package",
+      "src/DisplacedDJ_MiniAOD/DJAnalyzerMini",
+      "crab_projects"
+    ],
+    "src/DisplacedDJ_MiniAOD/DJAnalyzerMini/data": [
+      "Package",
+      "src/DisplacedDJ_MiniAOD/DJAnalyzerMini",
+      "data"
+    ],
+    "src/DisplacedDJ_MiniAOD/DJAnalyzerMini/interface": [
+      "Package",
+      "src/DisplacedDJ_MiniAOD/DJAnalyzerMini",
+      "interface"
+    ],
+    "src/DisplacedDJ_MiniAOD/DJAnalyzerMini/plugins": [
+      "plugins",
+      "src/DisplacedDJ_MiniAOD/DJAnalyzerMini/plugins",
+      ""
+    ],
+    "src/DisplacedDJ_MiniAOD/DJAnalyzerMini/python": [
+      "python",
+      "src/DisplacedDJ_MiniAOD/DJAnalyzerMini/python",
+      ""
+    ],
+    "src/DisplacedDJ_MiniAOD/DataFormats": [
+      "Package",
+      "src/DisplacedDJ_MiniAOD/DataFormats",
+      ""
+    ],
+    "src/DisplacedDJ_MiniAOD/DataFormats/src": [
+      "library",
+      "src/DisplacedDJ_MiniAOD/DataFormats/src",
+      ""
+    ]
+  },
+  "DIRCACHE": {
+    "config": [
+      1699903182.1194592
+    ],
+    "src": [
+      1699551058.181077,
+      "src/DisplacedDJ_MiniAOD"
+    ],
+    "src/DisplacedDJ_MiniAOD": [
+      1699551050.760579,
+      "src/DisplacedDJ_MiniAOD/DJAnalyzerMini",
+      "src/DisplacedDJ_MiniAOD/DataFormats"
+    ],
+    "src/DisplacedDJ_MiniAOD/DJAnalyzerMini": [
+      1699557132.8019962,
+      "src/DisplacedDJ_MiniAOD/DJAnalyzerMini/plugins",
+      "src/DisplacedDJ_MiniAOD/DJAnalyzerMini/python"
+    ],
+    "src/DisplacedDJ_MiniAOD/DJAnalyzerMini/plugins": [
+      1699553826.9850957
+    ],
+    "src/DisplacedDJ_MiniAOD/DJAnalyzerMini/python": [
+      1699551050.4150944
+    ],
+    "src/DisplacedDJ_MiniAOD/DataFormats": [
+      1699551050.857954,
+      "src/DisplacedDJ_MiniAOD/DataFormats/src"
+    ],
+    "src/DisplacedDJ_MiniAOD/DataFormats/src": [
+      1699551348.9474683
+    ]
+  },
+  "PACKMAP": {
+    "src/DisplacedDJ_MiniAOD/DataFormats": "src/DisplacedDJ_MiniAOD/DataFormats/src"
+  },
+  "REMOVEDBF": {},
+  "REMOVEDDIR": {}
+}

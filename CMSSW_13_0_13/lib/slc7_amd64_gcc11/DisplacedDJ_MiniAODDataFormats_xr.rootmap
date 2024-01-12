@@ -1,0 +1,31 @@
+{ decls }
+namespace edm {  }
+namespace edm { template <typename T> class Wrapper; }
+namespace std {  }
+
+[ libDisplacedDJ_MiniAODDataFormats.so ]
+# List of selected classes
+class edm::Wrapper<std::vector<std::vector<ROOT::Math::LorentzVector<ROOT::Math::PxPyPzE4D<float> > > > >
+class edm::Wrapper<std::vector<std::vector<bool> > >
+class edm::Wrapper<std::vector<std::vector<float> > >
+class edm::Wrapper<std::vector<std::vector<int> > >
+class edm::Wrapper<std::vector<std::vector<std::vector<float> > > >
+class edm::Wrapper<std::vector<std::vector<std::vector<int> > > >
+class edm::Wrapper<vector<vector<ROOT::Math::LorentzVector<ROOT::Math::PxPyPzE4D<float> > > > >
+class edm::Wrapper<vector<vector<bool> > >
+class edm::Wrapper<vector<vector<float> > >
+class edm::Wrapper<vector<vector<int> > >
+class edm::Wrapper<vector<vector<vector<float> > > >
+class edm::Wrapper<vector<vector<vector<int> > > >
+class vector<std::vector<ROOT::Math::LorentzVector<ROOT::Math::PxPyPzE4D<float> > > >
+class vector<std::vector<bool> >
+class vector<std::vector<float> >
+class vector<std::vector<int> >
+class vector<std::vector<std::vector<float> > >
+class vector<std::vector<std::vector<int> > >
+class vector<vector<ROOT::Math::LorentzVector<ROOT::Math::PxPyPzE4D<float> > > >
+class vector<vector<bool> >
+class vector<vector<float> >
+class vector<vector<int> >
+class vector<vector<vector<float> > >
+class vector<vector<vector<int> > >

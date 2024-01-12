@@ -1,0 +1,10 @@
+{
+  "EXPORT": {
+    "LIB": [
+      "1"
+    ]
+  },
+  "USE": [
+    "PhysicsTools/TensorFlow"
+  ]
+}

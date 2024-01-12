@@ -1,0 +1,965 @@
+DEBUG 2023-11-01 18:39:19.162 UTC: 	 CRAB Client version: v3.230612
+DEBUG 2023-11-01 18:39:19.163 UTC: 	 Running on: Linux brux20 3.10.0-1160.71.1.el7.x86_64 #1 SMP Wed Jun 15 08:55:08 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux - Red Hat Enterprise Linux
+DEBUG 2023-11-01 18:39:19.163 UTC: 	 Executing command: 'submit'
+DEBUG 2023-11-01 18:39:19.164 UTC: 	 Could not find CRAB cache file /isilon/data/users/nvenkat4/.crab3; creating a new one.
+DEBUG 2023-11-01 18:40:44.739 UTC: 	 CRAB Client version: v3.230612
+DEBUG 2023-11-01 18:40:44.739 UTC: 	 Running on: Linux brux20 3.10.0-1160.71.1.el7.x86_64 #1 SMP Wed Jun 15 08:55:08 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux - Red Hat Enterprise Linux
+DEBUG 2023-11-01 18:40:44.739 UTC: 	 Executing command: 'checkwrite'
+DEBUG 2023-11-01 18:40:44.740 UTC: 	 Found CRAB cache file /isilon/data/users/nvenkat4/.crab3
+DEBUG 2023-11-01 18:40:44.743 UTC: 	 Checking credentials
+DEBUG 2023-11-01 18:40:44.743 UTC: 	 Found proxy file /tmp/x509up_u140221375
+DEBUG 2023-11-01 18:40:44.743 UTC: 	 Making sure it has proper VOMS extension
+DEBUG 2023-11-01 18:40:44.743 UTC: 	 Executing command :
+ voms-proxy-info --vo --file /tmp/x509up_u140221375
+DEBUG 2023-11-01 18:40:44.790 UTC: 	 output : cms
+
+ error: 
+ retcode : 0
+DEBUG 2023-11-01 18:40:44.790 UTC: 	 Getting proxy life time left
+DEBUG 2023-11-01 18:40:44.791 UTC: 	 Executing command :
+ voms-proxy-info --actimeleft --timeleft --file /tmp/x509up_u140221375
+DEBUG 2023-11-01 18:40:44.843 UTC: 	 output : 521776
+521776
+
+ error: 
+ retcode : 0
+DEBUG 2023-11-01 18:40:44.843 UTC: 	 Proxy valid for 144:56:16 hours
+ERROR 2023-11-01 18:40:44.843 UTC: 	 Error: Please specify the site where to check the write permissions. Use the --site option.
+ERROR 2023-11-01 18:40:44.844 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/bin/crab.py", line 159, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/bin/crab.py", line 144, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/lib/CRABClient/Commands/checkwrite.py", line 20, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/lib/CRABClient/Commands/SubCommand.py", line 378, in __init__
+    self.validateOptions()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/lib/CRABClient/Commands/checkwrite.py", line 291, in validateOptions
+    raise ex
+CRABClient.ClientExceptions.MissingOptionException: [91mError[0m: Please specify the site where to check the write permissions. Use the --site option.
+INFO 2023-11-01 18:40:44.852 UTC: 	 Log file is /isilon/data/users/nvenkat4/DisplacedJets_New/CMSSW_12_4_11_patch3/src/DisplacedDJ_MiniAOD/DJAnalyzerMini/crab.log
+DEBUG 2023-11-01 18:40:53.257 UTC: 	 CRAB Client version: v3.230612
+DEBUG 2023-11-01 18:40:53.257 UTC: 	 Running on: Linux brux20 3.10.0-1160.71.1.el7.x86_64 #1 SMP Wed Jun 15 08:55:08 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux - Red Hat Enterprise Linux
+DEBUG 2023-11-01 18:40:53.257 UTC: 	 Executing command: 'checkwrite'
+DEBUG 2023-11-01 18:40:53.258 UTC: 	 Found CRAB cache file /isilon/data/users/nvenkat4/.crab3
+WARNING 2023-11-01 18:40:53.260 UTC: 	 Warning: 'crab checkwrite' command takes no arguments, 1 given. Ignoring arguments ['.'].
+DEBUG 2023-11-01 18:40:53.260 UTC: 	 Checking credentials
+DEBUG 2023-11-01 18:40:53.260 UTC: 	 Found proxy file /tmp/x509up_u140221375
+DEBUG 2023-11-01 18:40:53.260 UTC: 	 Making sure it has proper VOMS extension
+DEBUG 2023-11-01 18:40:53.260 UTC: 	 Executing command :
+ voms-proxy-info --vo --file /tmp/x509up_u140221375
+DEBUG 2023-11-01 18:40:53.302 UTC: 	 output : cms
+
+ error: 
+ retcode : 0
+DEBUG 2023-11-01 18:40:53.303 UTC: 	 Getting proxy life time left
+DEBUG 2023-11-01 18:40:53.303 UTC: 	 Executing command :
+ voms-proxy-info --actimeleft --timeleft --file /tmp/x509up_u140221375
+DEBUG 2023-11-01 18:40:53.359 UTC: 	 output : 521767
+521767
+
+ error: 
+ retcode : 0
+DEBUG 2023-11-01 18:40:53.359 UTC: 	 Proxy valid for 144:56:07 hours
+ERROR 2023-11-01 18:40:53.360 UTC: 	 Error: Please specify the site where to check the write permissions. Use the --site option.
+ERROR 2023-11-01 18:40:53.360 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/bin/crab.py", line 159, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/bin/crab.py", line 144, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/lib/CRABClient/Commands/checkwrite.py", line 20, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/lib/CRABClient/Commands/SubCommand.py", line 378, in __init__
+    self.validateOptions()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/lib/CRABClient/Commands/checkwrite.py", line 291, in validateOptions
+    raise ex
+CRABClient.ClientExceptions.MissingOptionException: [91mError[0m: Please specify the site where to check the write permissions. Use the --site option.
+INFO 2023-11-01 18:40:53.368 UTC: 	 Log file is /isilon/data/users/nvenkat4/DisplacedJets_New/CMSSW_12_4_11_patch3/src/DisplacedDJ_MiniAOD/DJAnalyzerMini/crab.log
+DEBUG 2023-11-01 18:41:06.045 UTC: 	 CRAB Client version: v3.230612
+DEBUG 2023-11-01 18:41:06.045 UTC: 	 Running on: Linux brux20 3.10.0-1160.71.1.el7.x86_64 #1 SMP Wed Jun 15 08:55:08 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux - Red Hat Enterprise Linux
+DEBUG 2023-11-01 18:41:06.045 UTC: 	 Executing command: 'checkwrite'
+DEBUG 2023-11-01 18:41:06.046 UTC: 	 Found CRAB cache file /isilon/data/users/nvenkat4/.crab3
+DEBUG 2023-11-01 18:57:13.762 UTC: 	 CRAB Client version: v3.230612
+DEBUG 2023-11-01 18:57:13.763 UTC: 	 Running on: Linux brux20 3.10.0-1160.71.1.el7.x86_64 #1 SMP Wed Jun 15 08:55:08 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux - Red Hat Enterprise Linux
+DEBUG 2023-11-01 18:57:13.763 UTC: 	 Executing command: 'checkwrite'
+DEBUG 2023-11-01 18:57:13.765 UTC: 	 Found CRAB cache file /isilon/data/users/nvenkat4/.crab3
+DEBUG 2023-11-01 18:57:13.768 UTC: 	 Checking credentials
+DEBUG 2023-11-01 18:57:13.768 UTC: 	 Found proxy file /tmp/x509up_u140221375
+DEBUG 2023-11-01 18:57:13.768 UTC: 	 Making sure it has proper VOMS extension
+DEBUG 2023-11-01 18:57:13.768 UTC: 	 Executing command :
+ voms-proxy-info --vo --file /tmp/x509up_u140221375
+DEBUG 2023-11-01 18:57:13.832 UTC: 	 output : cms
+
+ error: 
+ retcode : 0
+DEBUG 2023-11-01 18:57:13.832 UTC: 	 Getting proxy life time left
+DEBUG 2023-11-01 18:57:13.832 UTC: 	 Executing command :
+ voms-proxy-info --actimeleft --timeleft --file /tmp/x509up_u140221375
+DEBUG 2023-11-01 18:57:13.883 UTC: 	 output : 520787
+520787
+
+ error: 
+ retcode : 0
+DEBUG 2023-11-01 18:57:13.884 UTC: 	 Proxy valid for 144:39:47 hours
+DEBUG 2023-11-01 18:57:13.884 UTC: 	 Command use: checkwrite
+DEBUG 2023-11-01 18:57:13.885 UTC: 	 Options use: ['--site', 'T2_CH_CERN']
+DEBUG 2023-11-01 18:57:13.885 UTC: 	 Instance is None
+DEBUG 2023-11-01 18:57:13.885 UTC: 	 Server base url is None
+DEBUG 2023-11-01 18:57:13.885 UTC: 	 Retrieving username ...
+DEBUG 2023-11-01 18:57:13.885 UTC: 	 Retrieving username from CRIC...
+DEBUG 2023-11-01 18:57:15.741 UTC: 	 username is nvenkata
+INFO 2023-11-01 18:57:15.741 UTC: 	 Will check write permission in the default location /store/user/<username>
+INFO 2023-11-01 18:57:15.742 UTC: 	 Validating LFN /store/user/nvenkata...
+INFO 2023-11-01 18:57:15.742 UTC: 	 LFN /store/user/nvenkata is valid.
+INFO 2023-11-01 18:57:15.774 UTC: 	 Will use `gfal-copy`, `gfal-rm` commands for checking write permissions
+INFO 2023-11-01 18:57:15.774 UTC: 	 Will check write permission in /store/user/nvenkata on site T2_CH_CERN
+INFO 2023-11-01 18:57:32.565 UTC: 	 Will use PFN: davs://eoscms.cern.ch:443/eos/cms/store/user/nvenkata/crab3checkwrite_20231101_145715/crab3checkwrite_20231101_145715.tmp
+INFO 2023-11-01 18:57:32.566 UTC: 	 
+Attempting to create (dummy) directory crab3checkwrite_20231101_145715 and copy (dummy) file crab3checkwrite_20231101_145715.tmp to /store/user/nvenkata
+
+INFO 2023-11-01 18:57:32.575 UTC: 	 Executing command: which scram >/dev/null 2>&1 && eval `scram unsetenv -sh`; gfal-copy -p -v -t 180 file:///isilon/data/users/nvenkat4/DisplacedJets_New/CMSSW_12_4_11_patch3/src/DisplacedDJ_MiniAOD/DJAnalyzerMini/crab3checkwrite_20231101_145715.tmp 'davs://eoscms.cern.ch:443/eos/cms/store/user/nvenkata/crab3checkwrite_20231101_145715/crab3checkwrite_20231101_145715.tmp'
+INFO 2023-11-01 18:57:32.575 UTC: 	 Please wait...
+INFO 2023-11-01 18:57:35.140 UTC: 	 Failed running copy command
+INFO 2023-11-01 18:57:35.141 UTC: 	   Stdout:
+    Copying 85 bytes file:///isilon/data/users/nvenkat4/DisplacedJets_New/CMSSW_12_4_11_patch3/src/DisplacedDJ_MiniAOD/DJAnalyzerMini/crab3checkwrite_20231101_145715.tmp => davs://eoscms.cern.ch:443/eos/cms/store/user/nvenkata/crab3checkwrite_20231101_145715/crab3checkwrite_20231101_145715.tmp
+    event: [1698865054443] BOTH   GFAL2:CORE:COPY	LIST:ENTER	
+    event: [1698865054443] BOTH   GFAL2:CORE:COPY	LIST:ITEM	file:///isilon/data/users/nvenkat4/DisplacedJets_New/CMSSW_12_4_11_patch3/src/DisplacedDJ_MiniAOD/DJAnalyzerMini/crab3checkwrite_20231101_145715.tmp => davs://eoscms.cern.ch:443/eos/cms/store/user/nvenkata/crab3checkwrite_20231101_145715/crab3checkwrite_20231101_145715.tmp
+    event: [1698865054443] BOTH   GFAL2:CORE:COPY	LIST:EXIT	
+    event: [1698865054443] BOTH   http_plugin	PREPARE:ENTER	file:///isilon/data/users/nvenkat4/DisplacedJets_New/CMSSW_12_4_11_patch3/src/DisplacedDJ_MiniAOD/DJAnalyzerMini/crab3checkwrite_20231101_145715.tmp => davs://eoscms.cern.ch:443/eos/cms/store/user/nvenkata/crab3checkwrite_20231101_145715/crab3checkwrite_20231101_145715.tmp
+    
+INFO 2023-11-01 18:57:35.141 UTC: 	   Stderr:
+    gfal-copy error: 1 (Operation not permitted) - DESTINATION MAKE_PARENT HTTP 403 : Permission refused 
+    
+INFO 2023-11-01 18:57:35.145 UTC: 	 
+Checkwrite Result:
+INFO 2023-11-01 18:57:35.145 UTC: 	 Unable to check write permission in /store/user/nvenkata on site T2_CH_CERN
+Please try again later or contact the site administrators sending them the 'crab checkwrite' output as printed above.
+INFO 2023-11-01 18:57:35.145 UTC: 	 Note: You cannot write to a site if you did not ask permission.
+INFO 2023-11-01 18:57:35.633 UTC: 	 Additional diagnostic info for CERN EOS
+== id ==>:
+uid=140221375(nvenkat4) gid=32000(gridusers) groups=32000(gridusers),513(domain+users),1012689(engn-eng--currentsemester-class-non-engn-grad-students),1608222(services-remoteapps-core),1608225(services-remoteapps-computational),1626569(services-office365students),1652292(services-papercut),1822275(services-papercut-student),2048887(student-zone),2763619(services-atlassian),2947557(user-nvenkat4),2955271(services-papercut-myprintpro),2991481(brown-jsm-all),3186507(services-remoteapps-core-students),3202501(grad-student-zone)
+== voms-proxy-info -all ==>:
+subject   : /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=nvenkata/CN=847068/CN=Nikhilesh Venkatasubramanian/CN=1317363292
+issuer    : /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=nvenkata/CN=847068/CN=Nikhilesh Venkatasubramanian
+identity  : /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=nvenkata/CN=847068/CN=Nikhilesh Venkatasubramanian
+type      : RFC compliant proxy
+strength  : 1024 bits
+path      : /tmp/x509up_u140221375
+timeleft  : 144:39:25
+key usage : Digital Signature, Key Encipherment
+=== VO cms extension information ===
+VO        : cms
+subject   : /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=nvenkata/CN=847068/CN=Nikhilesh Venkatasubramanian
+issuer    : /DC=ch/DC=cern/OU=computers/CN=lcg-voms2.cern.ch
+attribute : /cms/Role=NULL/Capability=NULL
+attribute : /cms/uscms/Role=NULL/Capability=NULL
+timeleft  : 144:39:25
+uri       : lcg-voms2.cern.ch:15002
+WARNING uberftp command not found. To get additional diagnostic info
+ log on lxplus, get a proxy and execute:
+ uberftp eoscmsftp.cern.ch pwd
+
+DEBUG 2023-11-01 19:05:58.202 UTC: 	 CRAB Client version: v3.230612
+DEBUG 2023-11-01 19:05:58.202 UTC: 	 Running on: Linux brux20 3.10.0-1160.71.1.el7.x86_64 #1 SMP Wed Jun 15 08:55:08 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux - Red Hat Enterprise Linux
+DEBUG 2023-11-01 19:05:58.202 UTC: 	 Executing command: 'checkwrite'
+DEBUG 2023-11-01 19:05:58.203 UTC: 	 Found CRAB cache file /isilon/data/users/nvenkat4/.crab3
+DEBUG 2023-11-01 19:05:58.205 UTC: 	 Checking credentials
+DEBUG 2023-11-01 19:05:58.205 UTC: 	 Found proxy file /tmp/x509up_u140221375
+DEBUG 2023-11-01 19:05:58.205 UTC: 	 Making sure it has proper VOMS extension
+DEBUG 2023-11-01 19:05:58.205 UTC: 	 Executing command :
+ voms-proxy-info --vo --file /tmp/x509up_u140221375
+DEBUG 2023-11-01 19:05:58.258 UTC: 	 output : cms
+
+ error: 
+ retcode : 0
+DEBUG 2023-11-01 19:05:58.258 UTC: 	 Getting proxy life time left
+DEBUG 2023-11-01 19:05:58.258 UTC: 	 Executing command :
+ voms-proxy-info --actimeleft --timeleft --file /tmp/x509up_u140221375
+DEBUG 2023-11-01 19:05:58.310 UTC: 	 output : 520262
+520262
+
+ error: 
+ retcode : 0
+DEBUG 2023-11-01 19:05:58.310 UTC: 	 Proxy valid for 144:31:02 hours
+DEBUG 2023-11-01 19:05:58.311 UTC: 	 Command use: checkwrite
+DEBUG 2023-11-01 19:05:58.311 UTC: 	 Options use: ['--site', 'T2_CH_CERN']
+DEBUG 2023-11-01 19:05:58.311 UTC: 	 Instance is None
+DEBUG 2023-11-01 19:05:58.311 UTC: 	 Server base url is None
+DEBUG 2023-11-01 19:05:58.311 UTC: 	 Retrieving username ...
+DEBUG 2023-11-01 19:05:58.311 UTC: 	 Retrieving username from CRIC...
+DEBUG 2023-11-01 19:06:00.512 UTC: 	 username is nvenkata
+INFO 2023-11-01 19:06:00.513 UTC: 	 Will check write permission in the default location /store/user/<username>
+INFO 2023-11-01 19:06:00.513 UTC: 	 Validating LFN /store/user/nvenkata...
+INFO 2023-11-01 19:06:00.513 UTC: 	 LFN /store/user/nvenkata is valid.
+INFO 2023-11-01 19:06:00.544 UTC: 	 Will use `gfal-copy`, `gfal-rm` commands for checking write permissions
+INFO 2023-11-01 19:06:00.545 UTC: 	 Will check write permission in /store/user/nvenkata on site T2_CH_CERN
+INFO 2023-11-01 19:06:02.743 UTC: 	 Will use PFN: davs://eoscms.cern.ch:443/eos/cms/store/user/nvenkata/crab3checkwrite_20231101_150600/crab3checkwrite_20231101_150600.tmp
+INFO 2023-11-01 19:06:02.744 UTC: 	 
+Attempting to create (dummy) directory crab3checkwrite_20231101_150600 and copy (dummy) file crab3checkwrite_20231101_150600.tmp to /store/user/nvenkata
+
+INFO 2023-11-01 19:06:02.752 UTC: 	 Executing command: which scram >/dev/null 2>&1 && eval `scram unsetenv -sh`; gfal-copy -p -v -t 180 file:///isilon/data/users/nvenkat4/DisplacedJets_New/CMSSW_12_4_11_patch3/src/DisplacedDJ_MiniAOD/DJAnalyzerMini/crab3checkwrite_20231101_150600.tmp 'davs://eoscms.cern.ch:443/eos/cms/store/user/nvenkata/crab3checkwrite_20231101_150600/crab3checkwrite_20231101_150600.tmp'
+INFO 2023-11-01 19:06:02.753 UTC: 	 Please wait...
+INFO 2023-11-01 19:06:05.070 UTC: 	 Failed running copy command
+INFO 2023-11-01 19:06:05.071 UTC: 	   Stdout:
+    Copying 85 bytes file:///isilon/data/users/nvenkat4/DisplacedJets_New/CMSSW_12_4_11_patch3/src/DisplacedDJ_MiniAOD/DJAnalyzerMini/crab3checkwrite_20231101_150600.tmp => davs://eoscms.cern.ch:443/eos/cms/store/user/nvenkata/crab3checkwrite_20231101_150600/crab3checkwrite_20231101_150600.tmp
+    event: [1698865564421] BOTH   GFAL2:CORE:COPY	LIST:ENTER	
+    event: [1698865564421] BOTH   GFAL2:CORE:COPY	LIST:ITEM	file:///isilon/data/users/nvenkat4/DisplacedJets_New/CMSSW_12_4_11_patch3/src/DisplacedDJ_MiniAOD/DJAnalyzerMini/crab3checkwrite_20231101_150600.tmp => davs://eoscms.cern.ch:443/eos/cms/store/user/nvenkata/crab3checkwrite_20231101_150600/crab3checkwrite_20231101_150600.tmp
+    event: [1698865564421] BOTH   GFAL2:CORE:COPY	LIST:EXIT	
+    event: [1698865564421] BOTH   http_plugin	PREPARE:ENTER	file:///isilon/data/users/nvenkat4/DisplacedJets_New/CMSSW_12_4_11_patch3/src/DisplacedDJ_MiniAOD/DJAnalyzerMini/crab3checkwrite_20231101_150600.tmp => davs://eoscms.cern.ch:443/eos/cms/store/user/nvenkata/crab3checkwrite_20231101_150600/crab3checkwrite_20231101_150600.tmp
+    
+INFO 2023-11-01 19:06:05.071 UTC: 	   Stderr:
+    gfal-copy error: 1 (Operation not permitted) - DESTINATION MAKE_PARENT HTTP 403 : Permission refused 
+    
+INFO 2023-11-01 19:06:05.075 UTC: 	 
+Checkwrite Result:
+INFO 2023-11-01 19:06:05.075 UTC: 	 Unable to check write permission in /store/user/nvenkata on site T2_CH_CERN
+Please try again later or contact the site administrators sending them the 'crab checkwrite' output as printed above.
+INFO 2023-11-01 19:06:05.075 UTC: 	 Note: You cannot write to a site if you did not ask permission.
+INFO 2023-11-01 19:06:05.572 UTC: 	 Additional diagnostic info for CERN EOS
+== id ==>:
+uid=140221375(nvenkat4) gid=32000(gridusers) groups=32000(gridusers),513(domain+users),1012689(engn-eng--currentsemester-class-non-engn-grad-students),1608222(services-remoteapps-core),1608225(services-remoteapps-computational),1626569(services-office365students),1652292(services-papercut),1822275(services-papercut-student),2048887(student-zone),2763619(services-atlassian),2947557(user-nvenkat4),2955271(services-papercut-myprintpro),2991481(brown-jsm-all),3186507(services-remoteapps-core-students),3202501(grad-student-zone)
+== voms-proxy-info -all ==>:
+subject   : /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=nvenkata/CN=847068/CN=Nikhilesh Venkatasubramanian/CN=1317363292
+issuer    : /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=nvenkata/CN=847068/CN=Nikhilesh Venkatasubramanian
+identity  : /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=nvenkata/CN=847068/CN=Nikhilesh Venkatasubramanian
+type      : RFC compliant proxy
+strength  : 1024 bits
+path      : /tmp/x509up_u140221375
+timeleft  : 144:30:55
+key usage : Digital Signature, Key Encipherment
+=== VO cms extension information ===
+VO        : cms
+subject   : /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=nvenkata/CN=847068/CN=Nikhilesh Venkatasubramanian
+issuer    : /DC=ch/DC=cern/OU=computers/CN=lcg-voms2.cern.ch
+attribute : /cms/Role=NULL/Capability=NULL
+attribute : /cms/uscms/Role=NULL/Capability=NULL
+timeleft  : 144:30:55
+uri       : lcg-voms2.cern.ch:15002
+WARNING uberftp command not found. To get additional diagnostic info
+ log on lxplus, get a proxy and execute:
+ uberftp eoscmsftp.cern.ch pwd
+
+DEBUG 2023-11-01 19:18:01.559 UTC: 	 CRAB Client version: v3.230612
+DEBUG 2023-11-01 19:18:01.560 UTC: 	 Running on: Linux brux20 3.10.0-1160.71.1.el7.x86_64 #1 SMP Wed Jun 15 08:55:08 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux - Red Hat Enterprise Linux
+DEBUG 2023-11-01 19:18:01.560 UTC: 	 Executing command: 'checkwrite'
+DEBUG 2023-11-01 19:18:01.562 UTC: 	 Found CRAB cache file /isilon/data/users/nvenkat4/.crab3
+DEBUG 2023-11-01 19:18:01.564 UTC: 	 Checking credentials
+DEBUG 2023-11-01 19:18:01.564 UTC: 	 Found proxy file /tmp/x509up_u140221375
+DEBUG 2023-11-01 19:18:01.564 UTC: 	 Making sure it has proper VOMS extension
+DEBUG 2023-11-01 19:18:01.565 UTC: 	 Executing command :
+ voms-proxy-info --vo --file /tmp/x509up_u140221375
+DEBUG 2023-11-01 19:18:01.611 UTC: 	 output : cms
+
+ error: 
+ retcode : 0
+DEBUG 2023-11-01 19:18:01.611 UTC: 	 Getting proxy life time left
+DEBUG 2023-11-01 19:18:01.611 UTC: 	 Executing command :
+ voms-proxy-info --actimeleft --timeleft --file /tmp/x509up_u140221375
+DEBUG 2023-11-01 19:18:01.648 UTC: 	 output : 519539
+519539
+
+ error: 
+ retcode : 0
+DEBUG 2023-11-01 19:18:01.648 UTC: 	 Proxy valid for 144:18:59 hours
+DEBUG 2023-11-01 19:18:01.649 UTC: 	 Command use: checkwrite
+DEBUG 2023-11-01 19:18:01.649 UTC: 	 Options use: ['--site', 'T3_US_FNALLPC']
+DEBUG 2023-11-01 19:18:01.649 UTC: 	 Instance is None
+DEBUG 2023-11-01 19:18:01.649 UTC: 	 Server base url is None
+DEBUG 2023-11-01 19:18:01.649 UTC: 	 Retrieving username ...
+DEBUG 2023-11-01 19:18:01.649 UTC: 	 Retrieving username from CRIC...
+DEBUG 2023-11-01 19:18:03.566 UTC: 	 username is nvenkata
+INFO 2023-11-01 19:18:03.566 UTC: 	 Will check write permission in the default location /store/user/<username>
+INFO 2023-11-01 19:18:03.567 UTC: 	 Validating LFN /store/user/nvenkata...
+INFO 2023-11-01 19:18:03.567 UTC: 	 LFN /store/user/nvenkata is valid.
+INFO 2023-11-01 19:18:03.596 UTC: 	 Will use `gfal-copy`, `gfal-rm` commands for checking write permissions
+INFO 2023-11-01 19:18:03.596 UTC: 	 Will check write permission in /store/user/nvenkata on site T3_US_FNALLPC
+INFO 2023-11-01 19:18:05.666 UTC: 	 Will use PFN: davs://cmseos.fnal.gov:9000/eos/uscms/store/user/nvenkata/crab3checkwrite_20231101_151803/crab3checkwrite_20231101_151803.tmp
+INFO 2023-11-01 19:18:05.667 UTC: 	 
+Attempting to create (dummy) directory crab3checkwrite_20231101_151803 and copy (dummy) file crab3checkwrite_20231101_151803.tmp to /store/user/nvenkata
+
+INFO 2023-11-01 19:18:05.675 UTC: 	 Executing command: which scram >/dev/null 2>&1 && eval `scram unsetenv -sh`; gfal-copy -p -v -t 180 file:///isilon/data/users/nvenkat4/DisplacedJets_New/CMSSW_12_4_11_patch3/src/DisplacedDJ_MiniAOD/DJAnalyzerMini/crab3checkwrite_20231101_151803.tmp 'davs://cmseos.fnal.gov:9000/eos/uscms/store/user/nvenkata/crab3checkwrite_20231101_151803/crab3checkwrite_20231101_151803.tmp'
+INFO 2023-11-01 19:18:05.675 UTC: 	 Please wait...
+INFO 2023-11-01 19:18:08.503 UTC: 	 
+Successfully created directory crab3checkwrite_20231101_151803 and copied file crab3checkwrite_20231101_151803.tmp to /store/user/nvenkata
+INFO 2023-11-01 19:18:08.504 UTC: 	 
+Attempting to delete file davs://cmseos.fnal.gov:9000/eos/uscms/store/user/nvenkata/crab3checkwrite_20231101_151803/crab3checkwrite_20231101_151803.tmp
+
+INFO 2023-11-01 19:18:08.504 UTC: 	 Executing command: which scram >/dev/null 2>&1 && eval `scram unsetenv -sh`; gfal-rm -v -t 180 'davs://cmseos.fnal.gov:9000/eos/uscms/store/user/nvenkata/crab3checkwrite_20231101_151803/crab3checkwrite_20231101_151803.tmp'
+INFO 2023-11-01 19:18:08.504 UTC: 	 Please wait...
+INFO 2023-11-01 19:18:10.601 UTC: 	 
+Successfully deleted file davs://cmseos.fnal.gov:9000/eos/uscms/store/user/nvenkata/crab3checkwrite_20231101_151803/crab3checkwrite_20231101_151803.tmp
+INFO 2023-11-01 19:18:10.602 UTC: 	 
+Attempting to delete directory davs://cmseos.fnal.gov:9000/eos/uscms/store/user/nvenkata/crab3checkwrite_20231101_151803/
+
+INFO 2023-11-01 19:18:10.602 UTC: 	 Executing command: which scram >/dev/null 2>&1 && eval `scram unsetenv -sh`; gfal-rm -r -v -t 180 'davs://cmseos.fnal.gov:9000/eos/uscms/store/user/nvenkata/crab3checkwrite_20231101_151803/'
+INFO 2023-11-01 19:18:10.602 UTC: 	 Please wait...
+INFO 2023-11-01 19:18:12.582 UTC: 	 
+Successfully deleted directory davs://cmseos.fnal.gov:9000/eos/uscms/store/user/nvenkata/crab3checkwrite_20231101_151803/
+INFO 2023-11-01 19:18:12.586 UTC: 	 
+Checkwrite Result:
+INFO 2023-11-01 19:18:12.587 UTC: 	 Success: Able to write in /store/user/nvenkata on site T3_US_FNALLPC
+DEBUG 2023-11-01 20:51:50.724 UTC: 	 CRAB Client version: v3.230612
+DEBUG 2023-11-01 20:51:50.724 UTC: 	 Running on: Linux brux20 3.10.0-1160.71.1.el7.x86_64 #1 SMP Wed Jun 15 08:55:08 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux - Red Hat Enterprise Linux
+DEBUG 2023-11-01 20:51:50.725 UTC: 	 Executing command: 'checkwrite'
+DEBUG 2023-11-01 20:51:50.725 UTC: 	 Found CRAB cache file /isilon/data/users/nvenkat4/.crab3
+DEBUG 2023-11-01 20:51:50.728 UTC: 	 Checking credentials
+DEBUG 2023-11-01 20:51:50.728 UTC: 	 Found proxy file /tmp/x509up_u140221375
+DEBUG 2023-11-01 20:51:50.728 UTC: 	 Making sure it has proper VOMS extension
+DEBUG 2023-11-01 20:51:50.728 UTC: 	 Executing command :
+ voms-proxy-info --vo --file /tmp/x509up_u140221375
+DEBUG 2023-11-01 20:51:50.773 UTC: 	 output : cms
+
+ error: 
+ retcode : 0
+DEBUG 2023-11-01 20:51:50.773 UTC: 	 Getting proxy life time left
+DEBUG 2023-11-01 20:51:50.773 UTC: 	 Executing command :
+ voms-proxy-info --actimeleft --timeleft --file /tmp/x509up_u140221375
+DEBUG 2023-11-01 20:51:50.830 UTC: 	 output : 691175
+691175
+
+ error: 
+ retcode : 0
+DEBUG 2023-11-01 20:51:50.830 UTC: 	 Proxy valid for 191:59:35 hours
+DEBUG 2023-11-01 20:51:50.831 UTC: 	 Command use: checkwrite
+DEBUG 2023-11-01 20:51:50.831 UTC: 	 Options use: ['--site', 'T3_US_Brown']
+DEBUG 2023-11-01 20:51:50.831 UTC: 	 Instance is None
+DEBUG 2023-11-01 20:51:50.831 UTC: 	 Server base url is None
+DEBUG 2023-11-01 20:51:50.832 UTC: 	 Retrieving username ...
+DEBUG 2023-11-01 20:51:50.832 UTC: 	 Retrieving username from CRIC...
+DEBUG 2023-11-01 20:51:52.512 UTC: 	 username is nvenkata
+INFO 2023-11-01 20:51:52.512 UTC: 	 Will check write permission in the default location /store/user/<username>
+INFO 2023-11-01 20:51:52.512 UTC: 	 Validating LFN /store/user/nvenkata...
+INFO 2023-11-01 20:51:52.512 UTC: 	 LFN /store/user/nvenkata is valid.
+INFO 2023-11-01 20:51:52.539 UTC: 	 Will use `gfal-copy`, `gfal-rm` commands for checking write permissions
+INFO 2023-11-01 20:51:52.539 UTC: 	 Will check write permission in /store/user/nvenkata on site T3_US_Brown
+INFO 2023-11-01 20:51:55.550 UTC: 	 Will use PFN: davs://pbrux30cit.hep.brown.edu:1094/store/user/nvenkata/crab3checkwrite_20231101_165152/crab3checkwrite_20231101_165152.tmp
+INFO 2023-11-01 20:51:55.551 UTC: 	 
+Attempting to create (dummy) directory crab3checkwrite_20231101_165152 and copy (dummy) file crab3checkwrite_20231101_165152.tmp to /store/user/nvenkata
+
+INFO 2023-11-01 20:51:55.559 UTC: 	 Executing command: which scram >/dev/null 2>&1 && eval `scram unsetenv -sh`; gfal-copy -p -v -t 180 file:///isilon/data/users/nvenkat4/DisplacedJets_New/CMSSW_12_4_11_patch3/src/DisplacedDJ_MiniAOD/DJAnalyzerMini/crab3checkwrite_20231101_165152.tmp 'davs://pbrux30cit.hep.brown.edu:1094/store/user/nvenkata/crab3checkwrite_20231101_165152/crab3checkwrite_20231101_165152.tmp'
+INFO 2023-11-01 20:51:55.560 UTC: 	 Please wait...
+INFO 2023-11-01 20:51:56.753 UTC: 	 
+Successfully created directory crab3checkwrite_20231101_165152 and copied file crab3checkwrite_20231101_165152.tmp to /store/user/nvenkata
+INFO 2023-11-01 20:51:56.754 UTC: 	 
+Attempting to delete file davs://pbrux30cit.hep.brown.edu:1094/store/user/nvenkata/crab3checkwrite_20231101_165152/crab3checkwrite_20231101_165152.tmp
+
+INFO 2023-11-01 20:51:56.754 UTC: 	 Executing command: which scram >/dev/null 2>&1 && eval `scram unsetenv -sh`; gfal-rm -v -t 180 'davs://pbrux30cit.hep.brown.edu:1094/store/user/nvenkata/crab3checkwrite_20231101_165152/crab3checkwrite_20231101_165152.tmp'
+INFO 2023-11-01 20:51:56.754 UTC: 	 Please wait...
+INFO 2023-11-01 20:51:57.691 UTC: 	 
+Successfully deleted file davs://pbrux30cit.hep.brown.edu:1094/store/user/nvenkata/crab3checkwrite_20231101_165152/crab3checkwrite_20231101_165152.tmp
+INFO 2023-11-01 20:51:57.691 UTC: 	 
+Attempting to delete directory davs://pbrux30cit.hep.brown.edu:1094/store/user/nvenkata/crab3checkwrite_20231101_165152/
+
+INFO 2023-11-01 20:51:57.692 UTC: 	 Executing command: which scram >/dev/null 2>&1 && eval `scram unsetenv -sh`; gfal-rm -r -v -t 180 'davs://pbrux30cit.hep.brown.edu:1094/store/user/nvenkata/crab3checkwrite_20231101_165152/'
+INFO 2023-11-01 20:51:57.692 UTC: 	 Please wait...
+INFO 2023-11-01 20:51:58.629 UTC: 	 
+Successfully deleted directory davs://pbrux30cit.hep.brown.edu:1094/store/user/nvenkata/crab3checkwrite_20231101_165152/
+INFO 2023-11-01 20:51:58.634 UTC: 	 
+Checkwrite Result:
+INFO 2023-11-01 20:51:58.634 UTC: 	 Success: Able to write in /store/user/nvenkata on site T3_US_Brown
+DEBUG 2023-11-02 16:32:46.583 UTC: 	 CRAB Client version: v3.231010
+DEBUG 2023-11-02 16:32:46.584 UTC: 	 Running on: Linux brux20 3.10.0-1160.71.1.el7.x86_64 #1 SMP Wed Jun 15 08:55:08 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux - Red Hat Enterprise Linux
+DEBUG 2023-11-02 16:32:46.584 UTC: 	 Executing command: 'checkwrite'
+DEBUG 2023-11-02 16:32:46.585 UTC: 	 Found CRAB cache file /isilon/data/users/nvenkat4/.crab3
+DEBUG 2023-11-02 16:33:03.825 UTC: 	 CRAB Client version: v3.231010
+DEBUG 2023-11-02 16:33:03.827 UTC: 	 Running on: Linux brux20 3.10.0-1160.71.1.el7.x86_64 #1 SMP Wed Jun 15 08:55:08 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux - Red Hat Enterprise Linux
+DEBUG 2023-11-02 16:33:03.827 UTC: 	 Executing command: 'checkwrite'
+DEBUG 2023-11-02 16:33:03.828 UTC: 	 Found CRAB cache file /isilon/data/users/nvenkat4/.crab3
+DEBUG 2023-11-02 16:33:03.830 UTC: 	 Checking credentials
+DEBUG 2023-11-02 16:33:03.831 UTC: 	 Found proxy file /tmp/x509up_u140221375
+DEBUG 2023-11-02 16:33:03.831 UTC: 	 Making sure it has proper VOMS extension
+DEBUG 2023-11-02 16:33:03.831 UTC: 	 Executing command :
+ voms-proxy-info --vo --file /tmp/x509up_u140221375
+DEBUG 2023-11-02 16:33:03.876 UTC: 	 output : cms
+
+ error: 
+ retcode : 0
+DEBUG 2023-11-02 16:33:03.876 UTC: 	 Getting proxy life time left
+DEBUG 2023-11-02 16:33:03.876 UTC: 	 Executing command :
+ voms-proxy-info --actimeleft --timeleft --file /tmp/x509up_u140221375
+DEBUG 2023-11-02 16:33:03.930 UTC: 	 output : 691162
+691162
+
+ error: 
+ retcode : 0
+DEBUG 2023-11-02 16:33:03.930 UTC: 	 Proxy valid for 191:59:22 hours
+DEBUG 2023-11-02 16:33:03.931 UTC: 	 Command use: checkwrite
+DEBUG 2023-11-02 16:33:03.931 UTC: 	 Options use: ['--site', 'T3_US_Brown']
+DEBUG 2023-11-02 16:33:03.931 UTC: 	 Instance is None
+DEBUG 2023-11-02 16:33:03.931 UTC: 	 Server base url is None
+DEBUG 2023-11-02 16:33:03.931 UTC: 	 Retrieving username ...
+DEBUG 2023-11-02 16:33:03.931 UTC: 	 Retrieving username from CRIC...
+DEBUG 2023-11-02 16:33:05.714 UTC: 	 username is nvenkata
+INFO 2023-11-02 16:33:05.715 UTC: 	 Will check write permission in the default location /store/user/<username>
+INFO 2023-11-02 16:33:05.715 UTC: 	 Validating LFN /store/user/nvenkata...
+INFO 2023-11-02 16:33:05.715 UTC: 	 LFN /store/user/nvenkata is valid.
+INFO 2023-11-02 16:33:05.744 UTC: 	 Will use `gfal-copy`, `gfal-rm` commands for checking write permissions
+INFO 2023-11-02 16:33:05.745 UTC: 	 Will check write permission in /store/user/nvenkata on site T3_US_Brown
+INFO 2023-11-02 16:33:09.411 UTC: 	 Will use PFN: davs://pbrux30cit.hep.brown.edu:1094/store/user/nvenkata/crab3checkwrite_20231102_123305/crab3checkwrite_20231102_123305.tmp
+INFO 2023-11-02 16:33:09.411 UTC: 	 
+Attempting to create (dummy) directory crab3checkwrite_20231102_123305 and copy (dummy) file crab3checkwrite_20231102_123305.tmp to /store/user/nvenkata
+
+INFO 2023-11-02 16:33:09.420 UTC: 	 Executing command: which scram >/dev/null 2>&1 && eval `scram unsetenv -sh`; gfal-copy -p -v -t 180 file:///isilon/data/users/nvenkat4/DisplacedJets_New/CMSSW_12_4_11_patch3/src/DisplacedDJ_MiniAOD/DJAnalyzerMini/crab3checkwrite_20231102_123305.tmp 'davs://pbrux30cit.hep.brown.edu:1094/store/user/nvenkata/crab3checkwrite_20231102_123305/crab3checkwrite_20231102_123305.tmp'
+INFO 2023-11-02 16:33:09.420 UTC: 	 Please wait...
+INFO 2023-11-02 16:33:10.718 UTC: 	 
+Successfully created directory crab3checkwrite_20231102_123305 and copied file crab3checkwrite_20231102_123305.tmp to /store/user/nvenkata
+INFO 2023-11-02 16:33:10.719 UTC: 	 
+Attempting to delete file davs://pbrux30cit.hep.brown.edu:1094/store/user/nvenkata/crab3checkwrite_20231102_123305/crab3checkwrite_20231102_123305.tmp
+
+INFO 2023-11-02 16:33:10.719 UTC: 	 Executing command: which scram >/dev/null 2>&1 && eval `scram unsetenv -sh`; gfal-rm -v -t 180 'davs://pbrux30cit.hep.brown.edu:1094/store/user/nvenkata/crab3checkwrite_20231102_123305/crab3checkwrite_20231102_123305.tmp'
+INFO 2023-11-02 16:33:10.719 UTC: 	 Please wait...
+INFO 2023-11-02 16:33:11.715 UTC: 	 
+Successfully deleted file davs://pbrux30cit.hep.brown.edu:1094/store/user/nvenkata/crab3checkwrite_20231102_123305/crab3checkwrite_20231102_123305.tmp
+INFO 2023-11-02 16:33:11.716 UTC: 	 
+Attempting to delete directory davs://pbrux30cit.hep.brown.edu:1094/store/user/nvenkata/crab3checkwrite_20231102_123305/
+
+INFO 2023-11-02 16:33:11.716 UTC: 	 Executing command: which scram >/dev/null 2>&1 && eval `scram unsetenv -sh`; gfal-rm -r -v -t 180 'davs://pbrux30cit.hep.brown.edu:1094/store/user/nvenkata/crab3checkwrite_20231102_123305/'
+INFO 2023-11-02 16:33:11.716 UTC: 	 Please wait...
+INFO 2023-11-02 16:33:12.678 UTC: 	 
+Successfully deleted directory davs://pbrux30cit.hep.brown.edu:1094/store/user/nvenkata/crab3checkwrite_20231102_123305/
+INFO 2023-11-02 16:33:12.683 UTC: 	 
+Checkwrite Result:
+INFO 2023-11-02 16:33:12.683 UTC: 	 Success: Able to write in /store/user/nvenkata on site T3_US_Brown
+DEBUG 2023-11-02 17:12:19.703 UTC: 	 CRAB Client version: v3.231010
+DEBUG 2023-11-02 17:12:19.704 UTC: 	 Running on: Linux brux20 3.10.0-1160.71.1.el7.x86_64 #1 SMP Wed Jun 15 08:55:08 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux - Red Hat Enterprise Linux
+DEBUG 2023-11-02 17:12:19.704 UTC: 	 Executing command: 'status'
+DEBUG 2023-11-02 17:12:19.705 UTC: 	 Found CRAB cache file /isilon/data/users/nvenkat4/.crab3
+ERROR 2023-11-02 17:12:19.707 UTC: 	 Error: crab_projects/crab_test_data_DisplacedJet2022F_v1_Run3_dispprompt_NewPtrkls is not a valid CRAB project directory.
+ERROR 2023-11-02 17:12:19.708 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231010.00/bin/crab.py", line 159, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231010.00/bin/crab.py", line 144, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231010.00/lib/CRABClient/Commands/status.py", line 48, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231010.00/lib/CRABClient/Commands/SubCommand.py", line 277, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231010.00/lib/CRABClient/Commands/SubCommand.py", line 644, in validateOptions
+    raise ConfigurationException(msg)
+CRABClient.ClientExceptions.ConfigurationException: [91mError[0m: crab_projects/crab_test_data_DisplacedJet2022F_v1_Run3_dispprompt_NewPtrkls is not a valid CRAB project directory.
+INFO 2023-11-02 17:12:19.713 UTC: 	 Log file is /isilon/data/users/nvenkat4/DisplacedJets_New/CMSSW_12_4_11_patch3/src/DisplacedDJ_MiniAOD/DJAnalyzerMini/crab.log
+DEBUG 2023-11-02 17:13:12.353 UTC: 	 CRAB Client version: v3.231010
+DEBUG 2023-11-02 17:13:12.355 UTC: 	 Running on: Linux brux20 3.10.0-1160.71.1.el7.x86_64 #1 SMP Wed Jun 15 08:55:08 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux - Red Hat Enterprise Linux
+DEBUG 2023-11-02 17:13:12.355 UTC: 	 Executing command: 'status'
+DEBUG 2023-11-02 17:13:12.356 UTC: 	 Found CRAB cache file /isilon/data/users/nvenkat4/.crab3
+ERROR 2023-11-02 17:13:12.358 UTC: 	 Error: crab_projects/crab_test_data_DisplacedJet2022F_v1_Run3_dispprompt_NewPtrkls is not a valid CRAB project directory.
+ERROR 2023-11-02 17:13:12.359 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231010.00/bin/crab.py", line 159, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231010.00/bin/crab.py", line 144, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231010.00/lib/CRABClient/Commands/status.py", line 48, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231010.00/lib/CRABClient/Commands/SubCommand.py", line 277, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231010.00/lib/CRABClient/Commands/SubCommand.py", line 644, in validateOptions
+    raise ConfigurationException(msg)
+CRABClient.ClientExceptions.ConfigurationException: [91mError[0m: crab_projects/crab_test_data_DisplacedJet2022F_v1_Run3_dispprompt_NewPtrkls is not a valid CRAB project directory.
+INFO 2023-11-02 17:13:12.373 UTC: 	 Log file is /isilon/data/users/nvenkat4/DisplacedJets_New/CMSSW_12_4_11_patch3/src/DisplacedDJ_MiniAOD/DJAnalyzerMini/crab.log
+DEBUG 2023-11-02 17:39:47.811 UTC: 	 CRAB Client version: v3.231010
+DEBUG 2023-11-02 17:39:47.813 UTC: 	 Running on: Linux brux20 3.10.0-1160.71.1.el7.x86_64 #1 SMP Wed Jun 15 08:55:08 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux - Red Hat Enterprise Linux
+DEBUG 2023-11-02 17:39:47.813 UTC: 	 Executing command: 'status'
+DEBUG 2023-11-02 17:39:47.814 UTC: 	 Found CRAB cache file /isilon/data/users/nvenkat4/.crab3
+ERROR 2023-11-02 17:39:47.818 UTC: 	 Error: -verboseError is not a valid CRAB project directory.
+ERROR 2023-11-02 17:39:47.818 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231010.00/bin/crab.py", line 159, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231010.00/bin/crab.py", line 144, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231010.00/lib/CRABClient/Commands/status.py", line 48, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231010.00/lib/CRABClient/Commands/SubCommand.py", line 277, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231010.00/lib/CRABClient/Commands/SubCommand.py", line 644, in validateOptions
+    raise ConfigurationException(msg)
+CRABClient.ClientExceptions.ConfigurationException: [91mError[0m: -verboseError is not a valid CRAB project directory.
+INFO 2023-11-02 17:39:47.825 UTC: 	 Log file is /isilon/data/users/nvenkat4/DisplacedJets_New/CMSSW_12_4_11_patch3/src/DisplacedDJ_MiniAOD/DJAnalyzerMini/crab.log
+DEBUG 2023-11-02 17:54:36.807 UTC: 	 CRAB Client version: v3.231010
+DEBUG 2023-11-02 17:54:36.807 UTC: 	 Running on: Linux brux20 3.10.0-1160.71.1.el7.x86_64 #1 SMP Wed Jun 15 08:55:08 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux - Red Hat Enterprise Linux
+DEBUG 2023-11-02 17:54:36.807 UTC: 	 Executing command: 'checkwrite'
+DEBUG 2023-11-02 17:54:36.808 UTC: 	 Found CRAB cache file /isilon/data/users/nvenkat4/.crab3
+DEBUG 2023-11-02 17:54:36.814 UTC: 	 Checking credentials
+DEBUG 2023-11-02 17:54:36.814 UTC: 	 Found proxy file /tmp/x509up_u140221375
+DEBUG 2023-11-02 17:54:36.814 UTC: 	 Making sure it has proper VOMS extension
+DEBUG 2023-11-02 17:54:36.814 UTC: 	 Executing command :
+ voms-proxy-info --vo --file /tmp/x509up_u140221375
+DEBUG 2023-11-02 17:54:36.896 UTC: 	 output : cms
+
+ error: 
+ retcode : 0
+DEBUG 2023-11-02 17:54:36.897 UTC: 	 Getting proxy life time left
+DEBUG 2023-11-02 17:54:36.897 UTC: 	 Executing command :
+ voms-proxy-info --actimeleft --timeleft --file /tmp/x509up_u140221375
+DEBUG 2023-11-02 17:54:36.936 UTC: 	 output : 686269
+686269
+
+ error: 
+ retcode : 0
+DEBUG 2023-11-02 17:54:36.936 UTC: 	 Proxy valid for 190:37:49 hours
+DEBUG 2023-11-02 17:54:36.936 UTC: 	 Command use: checkwrite
+DEBUG 2023-11-02 17:54:36.936 UTC: 	 Options use: ['--site', 'T3_US_Brown']
+DEBUG 2023-11-02 17:54:36.936 UTC: 	 Instance is None
+DEBUG 2023-11-02 17:54:36.937 UTC: 	 Server base url is None
+DEBUG 2023-11-02 17:54:36.937 UTC: 	 Retrieving username ...
+DEBUG 2023-11-02 17:54:36.937 UTC: 	 Retrieving username from CRIC...
+DEBUG 2023-11-02 17:54:38.861 UTC: 	 username is nvenkata
+INFO 2023-11-02 17:54:38.861 UTC: 	 Will check write permission in the default location /store/user/<username>
+INFO 2023-11-02 17:54:38.862 UTC: 	 Validating LFN /store/user/nvenkata...
+INFO 2023-11-02 17:54:38.862 UTC: 	 LFN /store/user/nvenkata is valid.
+INFO 2023-11-02 17:54:38.897 UTC: 	 Will use `gfal-copy`, `gfal-rm` commands for checking write permissions
+INFO 2023-11-02 17:54:38.898 UTC: 	 Will check write permission in /store/user/nvenkata on site T3_US_Brown
+INFO 2023-11-02 17:54:42.935 UTC: 	 Will use PFN: davs://pbrux30cit.hep.brown.edu:1094/store/user/nvenkata/crab3checkwrite_20231102_135438/crab3checkwrite_20231102_135438.tmp
+INFO 2023-11-02 17:54:42.935 UTC: 	 
+Attempting to create (dummy) directory crab3checkwrite_20231102_135438 and copy (dummy) file crab3checkwrite_20231102_135438.tmp to /store/user/nvenkata
+
+INFO 2023-11-02 17:54:42.941 UTC: 	 Executing command: which scram >/dev/null 2>&1 && eval `scram unsetenv -sh`; gfal-copy -p -v -t 180 file:///isilon/data/users/nvenkat4/DisplacedJets_New/CMSSW_12_4_11_patch3/src/DisplacedDJ_MiniAOD/DJAnalyzerMini/crab3checkwrite_20231102_135438.tmp 'davs://pbrux30cit.hep.brown.edu:1094/store/user/nvenkata/crab3checkwrite_20231102_135438/crab3checkwrite_20231102_135438.tmp'
+INFO 2023-11-02 17:54:42.941 UTC: 	 Please wait...
+INFO 2023-11-02 17:54:44.365 UTC: 	 
+Successfully created directory crab3checkwrite_20231102_135438 and copied file crab3checkwrite_20231102_135438.tmp to /store/user/nvenkata
+INFO 2023-11-02 17:54:44.365 UTC: 	 
+Attempting to delete file davs://pbrux30cit.hep.brown.edu:1094/store/user/nvenkata/crab3checkwrite_20231102_135438/crab3checkwrite_20231102_135438.tmp
+
+INFO 2023-11-02 17:54:44.365 UTC: 	 Executing command: which scram >/dev/null 2>&1 && eval `scram unsetenv -sh`; gfal-rm -v -t 180 'davs://pbrux30cit.hep.brown.edu:1094/store/user/nvenkata/crab3checkwrite_20231102_135438/crab3checkwrite_20231102_135438.tmp'
+INFO 2023-11-02 17:54:44.365 UTC: 	 Please wait...
+INFO 2023-11-02 17:54:45.376 UTC: 	 
+Successfully deleted file davs://pbrux30cit.hep.brown.edu:1094/store/user/nvenkata/crab3checkwrite_20231102_135438/crab3checkwrite_20231102_135438.tmp
+INFO 2023-11-02 17:54:45.377 UTC: 	 
+Attempting to delete directory davs://pbrux30cit.hep.brown.edu:1094/store/user/nvenkata/crab3checkwrite_20231102_135438/
+
+INFO 2023-11-02 17:54:45.377 UTC: 	 Executing command: which scram >/dev/null 2>&1 && eval `scram unsetenv -sh`; gfal-rm -r -v -t 180 'davs://pbrux30cit.hep.brown.edu:1094/store/user/nvenkata/crab3checkwrite_20231102_135438/'
+INFO 2023-11-02 17:54:45.377 UTC: 	 Please wait...
+INFO 2023-11-02 17:54:46.639 UTC: 	 
+Successfully deleted directory davs://pbrux30cit.hep.brown.edu:1094/store/user/nvenkata/crab3checkwrite_20231102_135438/
+INFO 2023-11-02 17:54:46.643 UTC: 	 
+Checkwrite Result:
+INFO 2023-11-02 17:54:46.643 UTC: 	 Success: Able to write in /store/user/nvenkata on site T3_US_Brown
+DEBUG 2023-11-02 18:12:10.614 UTC: 	 CRAB Client version: v3.231010
+DEBUG 2023-11-02 18:12:10.616 UTC: 	 Running on: Linux brux20 3.10.0-1160.71.1.el7.x86_64 #1 SMP Wed Jun 15 08:55:08 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux - Red Hat Enterprise Linux
+DEBUG 2023-11-02 18:12:10.616 UTC: 	 Executing command: 'kill'
+DEBUG 2023-11-02 18:12:10.617 UTC: 	 Found CRAB cache file /isilon/data/users/nvenkat4/.crab3
+ERROR 2023-11-02 18:12:10.624 UTC: 	 Error: Please indicate the CRAB project directory with --dir=<project-directory>.
+ERROR 2023-11-02 18:12:10.624 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231010.00/bin/crab.py", line 159, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231010.00/bin/crab.py", line 144, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231010.00/lib/CRABClient/Commands/SubCommand.py", line 277, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231010.00/lib/CRABClient/Commands/SubCommand.py", line 640, in validateOptions
+    raise ex
+CRABClient.ClientExceptions.MissingOptionException: [91mError[0m: Please indicate the CRAB project directory with --dir=<project-directory>.
+INFO 2023-11-02 18:12:10.638 UTC: 	 Log file is /isilon/data/users/nvenkat4/DisplacedJets_New/CMSSW_12_4_11_patch3/src/DisplacedDJ_MiniAOD/DJAnalyzerMini/crab.log
+DEBUG 2023-11-02 19:16:26.498 UTC: 	 CRAB Client version: v3.231010
+DEBUG 2023-11-02 19:16:26.500 UTC: 	 Running on: Linux brux20 3.10.0-1160.71.1.el7.x86_64 #1 SMP Wed Jun 15 08:55:08 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux - Red Hat Enterprise Linux
+DEBUG 2023-11-02 19:16:26.500 UTC: 	 Executing command: 'submit'
+DEBUG 2023-11-02 19:16:26.509 UTC: 	 Found CRAB cache file /isilon/data/users/nvenkat4/.crab3
+INFO 2023-11-02 19:16:26.545 UTC: 	 Will use CRAB configuration file myCrab_cfg.py
+DEBUG 2023-11-02 19:16:26.545 UTC: 	 Loading CRAB configuration file.
+DEBUG 2023-11-02 19:16:26.695 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2023-11-02 19:16:26.717 UTC: 	 Working area '/isilon/data/users/nvenkat4/DisplacedJets_New/CMSSW_12_4_11_patch3/src/DisplacedDJ_MiniAOD/DJAnalyzerMini/crab_projects/crab_MC_Run3_2022_realistic_postEE_ggH_Hto2Sto4B' already exists 
+Please change the requestName in the config file
+ERROR 2023-11-02 19:16:26.717 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231010.00/bin/crab.py", line 159, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231010.00/bin/crab.py", line 144, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231010.00/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231010.00/lib/CRABClient/Commands/SubCommand.py", line 320, in __init__
+    self.requestarea, self.requestname, self.logfile = createWorkArea(
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231010.00/lib/CRABClient/ClientUtilities.py", line 387, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+CRABClient.ClientExceptions.ConfigException: Working area '/isilon/data/users/nvenkat4/DisplacedJets_New/CMSSW_12_4_11_patch3/src/DisplacedDJ_MiniAOD/DJAnalyzerMini/crab_projects/crab_MC_Run3_2022_realistic_postEE_ggH_Hto2Sto4B' already exists 
+Please change the requestName in the config file
+INFO 2023-11-02 19:16:26.744 UTC: 	 Log file is /isilon/data/users/nvenkat4/DisplacedJets_New/CMSSW_12_4_11_patch3/src/DisplacedDJ_MiniAOD/DJAnalyzerMini/crab.log
+DEBUG 2023-11-02 19:17:23.568 UTC: 	 CRAB Client version: v3.231010
+DEBUG 2023-11-02 19:17:23.569 UTC: 	 Running on: Linux brux20 3.10.0-1160.71.1.el7.x86_64 #1 SMP Wed Jun 15 08:55:08 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux - Red Hat Enterprise Linux
+DEBUG 2023-11-02 19:17:23.569 UTC: 	 Executing command: 'status'
+DEBUG 2023-11-02 19:17:23.571 UTC: 	 Found CRAB cache file /isilon/data/users/nvenkat4/.crab3
+ERROR 2023-11-02 19:17:23.585 UTC: 	 Error: crab_projects/crab_test_data_DisplacedJet2022F_v1_Run3_dispprompt_NewPtrk is not a valid CRAB project directory.
+ERROR 2023-11-02 19:17:23.585 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231010.00/bin/crab.py", line 159, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231010.00/bin/crab.py", line 144, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231010.00/lib/CRABClient/Commands/status.py", line 48, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231010.00/lib/CRABClient/Commands/SubCommand.py", line 277, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231010.00/lib/CRABClient/Commands/SubCommand.py", line 644, in validateOptions
+    raise ConfigurationException(msg)
+CRABClient.ClientExceptions.ConfigurationException: Error: crab_projects/crab_test_data_DisplacedJet2022F_v1_Run3_dispprompt_NewPtrk is not a valid CRAB project directory.
+INFO 2023-11-02 19:17:23.602 UTC: 	 Log file is /isilon/data/users/nvenkat4/DisplacedJets_New/CMSSW_12_4_11_patch3/src/DisplacedDJ_MiniAOD/DJAnalyzerMini/crab.log
+DEBUG 2023-11-02 19:48:52.671 UTC: 	 CRAB Client version: v3.231010
+DEBUG 2023-11-02 19:48:52.674 UTC: 	 Running on: Linux brux20 3.10.0-1160.71.1.el7.x86_64 #1 SMP Wed Jun 15 08:55:08 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux - Red Hat Enterprise Linux
+DEBUG 2023-11-02 19:48:52.674 UTC: 	 Executing command: 'status'
+DEBUG 2023-11-02 19:48:52.675 UTC: 	 Found CRAB cache file /isilon/data/users/nvenkat4/.crab3
+ERROR 2023-11-02 19:48:52.698 UTC: 	 Error: crab_projects/crab_test_data_DisplacedJet2022F_v1_Run3_dispprompt_NewPtrk is not a valid CRAB project directory.
+ERROR 2023-11-02 19:48:52.699 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231010.00/bin/crab.py", line 159, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231010.00/bin/crab.py", line 144, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231010.00/lib/CRABClient/Commands/status.py", line 48, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231010.00/lib/CRABClient/Commands/SubCommand.py", line 277, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231010.00/lib/CRABClient/Commands/SubCommand.py", line 644, in validateOptions
+    raise ConfigurationException(msg)
+CRABClient.ClientExceptions.ConfigurationException: Error: crab_projects/crab_test_data_DisplacedJet2022F_v1_Run3_dispprompt_NewPtrk is not a valid CRAB project directory.
+INFO 2023-11-02 19:48:52.734 UTC: 	 Log file is /isilon/data/users/nvenkat4/DisplacedJets_New/CMSSW_12_4_11_patch3/src/DisplacedDJ_MiniAOD/DJAnalyzerMini/crab.log
+DEBUG 2023-11-02 19:49:14.426 UTC: 	 CRAB Client version: v3.231010
+DEBUG 2023-11-02 19:49:14.428 UTC: 	 Running on: Linux brux20 3.10.0-1160.71.1.el7.x86_64 #1 SMP Wed Jun 15 08:55:08 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux - Red Hat Enterprise Linux
+DEBUG 2023-11-02 19:49:14.428 UTC: 	 Executing command: 'status'
+DEBUG 2023-11-02 19:49:14.431 UTC: 	 Found CRAB cache file /isilon/data/users/nvenkat4/.crab3
+ERROR 2023-11-02 19:49:14.442 UTC: 	 Error: crab_projects/crab_test_data_DisplacedJet2022F_v1_Run3_dispprompt_NewPtrk is not a valid CRAB project directory.
+ERROR 2023-11-02 19:49:14.442 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231010.00/bin/crab.py", line 159, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231010.00/bin/crab.py", line 144, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231010.00/lib/CRABClient/Commands/status.py", line 48, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231010.00/lib/CRABClient/Commands/SubCommand.py", line 277, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231010.00/lib/CRABClient/Commands/SubCommand.py", line 644, in validateOptions
+    raise ConfigurationException(msg)
+CRABClient.ClientExceptions.ConfigurationException: Error: crab_projects/crab_test_data_DisplacedJet2022F_v1_Run3_dispprompt_NewPtrk is not a valid CRAB project directory.
+INFO 2023-11-02 19:49:14.480 UTC: 	 Log file is /isilon/data/users/nvenkat4/DisplacedJets_New/CMSSW_12_4_11_patch3/src/DisplacedDJ_MiniAOD/DJAnalyzerMini/crab.log
+DEBUG 2023-11-02 21:57:01.238 UTC: 	 CRAB Client version: v3.231010
+DEBUG 2023-11-02 21:57:01.239 UTC: 	 Running on: Linux brux20 3.10.0-1160.71.1.el7.x86_64 #1 SMP Wed Jun 15 08:55:08 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux - Red Hat Enterprise Linux
+DEBUG 2023-11-02 21:57:01.239 UTC: 	 Executing command: 'submit'
+DEBUG 2023-11-02 21:57:01.240 UTC: 	 Found CRAB cache file /isilon/data/users/nvenkat4/.crab3
+INFO 2023-11-02 21:57:01.244 UTC: 	 Will use CRAB configuration file myCrab_cfg.py
+DEBUG 2023-11-02 21:57:01.244 UTC: 	 Loading CRAB configuration file.
+DEBUG 2023-11-02 21:57:01.261 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2023-11-02 21:57:01.263 UTC: 	 Working area '/isilon/data/users/nvenkat4/DisplacedJets_New/CMSSW_13_0_13/src/DisplacedDJ_MiniAOD/DJAnalyzerMini/crab_projects/crab_MC_Run3_2022_realistic_postEE_ggH_Hto2Sto4B' already exists 
+Please change the requestName in the config file
+ERROR 2023-11-02 21:57:01.264 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231010.00/bin/crab.py", line 159, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231010.00/bin/crab.py", line 144, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231010.00/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231010.00/lib/CRABClient/Commands/SubCommand.py", line 320, in __init__
+    self.requestarea, self.requestname, self.logfile = createWorkArea(
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231010.00/lib/CRABClient/ClientUtilities.py", line 387, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+CRABClient.ClientExceptions.ConfigException: Working area '/isilon/data/users/nvenkat4/DisplacedJets_New/CMSSW_13_0_13/src/DisplacedDJ_MiniAOD/DJAnalyzerMini/crab_projects/crab_MC_Run3_2022_realistic_postEE_ggH_Hto2Sto4B' already exists 
+Please change the requestName in the config file
+INFO 2023-11-02 21:57:01.273 UTC: 	 Log file is /isilon/data/users/nvenkat4/DisplacedJets_New/CMSSW_13_0_13/src/DisplacedDJ_MiniAOD/DJAnalyzerMini/crab.log
+DEBUG 2023-11-02 22:08:24.498 UTC: 	 CRAB Client version: v3.231010
+DEBUG 2023-11-02 22:08:24.498 UTC: 	 Running on: Linux brux20 3.10.0-1160.71.1.el7.x86_64 #1 SMP Wed Jun 15 08:55:08 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux - Red Hat Enterprise Linux
+DEBUG 2023-11-02 22:08:24.498 UTC: 	 Executing command: 'status'
+DEBUG 2023-11-02 22:08:24.499 UTC: 	 Found CRAB cache file /isilon/data/users/nvenkat4/.crab3
+DEBUG 2023-11-02 22:08:31.714 UTC: 	 CRAB Client version: v3.231010
+DEBUG 2023-11-02 22:08:31.714 UTC: 	 Running on: Linux brux20 3.10.0-1160.71.1.el7.x86_64 #1 SMP Wed Jun 15 08:55:08 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux - Red Hat Enterprise Linux
+DEBUG 2023-11-02 22:08:31.714 UTC: 	 Executing command: 'status'
+DEBUG 2023-11-02 22:08:31.715 UTC: 	 Found CRAB cache file /isilon/data/users/nvenkat4/.crab3
+DEBUG 2023-11-02 22:13:44.118 UTC: 	 CRAB Client version: v3.231010
+DEBUG 2023-11-02 22:13:44.119 UTC: 	 Running on: Linux brux20 3.10.0-1160.71.1.el7.x86_64 #1 SMP Wed Jun 15 08:55:08 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux - Red Hat Enterprise Linux
+DEBUG 2023-11-02 22:13:44.119 UTC: 	 Executing command: 'status'
+DEBUG 2023-11-02 22:13:44.120 UTC: 	 Found CRAB cache file /isilon/data/users/nvenkat4/.crab3
+ERROR 2023-11-02 22:13:44.127 UTC: 	 Error: crab_projects/crab_test_data_DisplacedJet2022F_v1_Run3_dispprompt_NewPtrk is not a valid CRAB project directory.
+ERROR 2023-11-02 22:13:44.127 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231010.00/bin/crab.py", line 159, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231010.00/bin/crab.py", line 144, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231010.00/lib/CRABClient/Commands/status.py", line 48, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231010.00/lib/CRABClient/Commands/SubCommand.py", line 277, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231010.00/lib/CRABClient/Commands/SubCommand.py", line 644, in validateOptions
+    raise ConfigurationException(msg)
+CRABClient.ClientExceptions.ConfigurationException: [91mError[0m: crab_projects/crab_test_data_DisplacedJet2022F_v1_Run3_dispprompt_NewPtrk is not a valid CRAB project directory.
+INFO 2023-11-02 22:13:44.134 UTC: 	 Log file is /isilon/data/users/nvenkat4/DisplacedJets_New/CMSSW_13_0_13/src/DisplacedDJ_MiniAOD/DJAnalyzerMini/crab.log
+DEBUG 2023-11-03 00:08:00.135 UTC: 	 CRAB Client version: v3.231010
+DEBUG 2023-11-03 00:08:00.135 UTC: 	 Running on: Linux brux20 3.10.0-1160.71.1.el7.x86_64 #1 SMP Wed Jun 15 08:55:08 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux - Red Hat Enterprise Linux
+DEBUG 2023-11-03 00:08:00.135 UTC: 	 Executing command: 'status'
+DEBUG 2023-11-03 00:08:00.137 UTC: 	 Found CRAB cache file /isilon/data/users/nvenkat4/.crab3
+ERROR 2023-11-03 00:08:00.140 UTC: 	 Error: crab_projects/crab_test_data_DisplacedJet2022F_v1_Run3_dispprompt_NewPtrk is not a valid CRAB project directory.
+ERROR 2023-11-03 00:08:00.140 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231010.00/bin/crab.py", line 159, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231010.00/bin/crab.py", line 144, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231010.00/lib/CRABClient/Commands/status.py", line 48, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231010.00/lib/CRABClient/Commands/SubCommand.py", line 277, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231010.00/lib/CRABClient/Commands/SubCommand.py", line 644, in validateOptions
+    raise ConfigurationException(msg)
+CRABClient.ClientExceptions.ConfigurationException: Error: crab_projects/crab_test_data_DisplacedJet2022F_v1_Run3_dispprompt_NewPtrk is not a valid CRAB project directory.
+INFO 2023-11-03 00:08:00.145 UTC: 	 Log file is /isilon/data/users/nvenkat4/DisplacedJets_New/CMSSW_13_0_13/src/DisplacedDJ_MiniAOD/DJAnalyzerMini/crab.log
+DEBUG 2023-11-09 17:52:16.982 UTC: 	 CRAB Client version: v3.231010
+DEBUG 2023-11-09 17:52:16.983 UTC: 	 Running on: Linux cmslpc143.fnal.gov 3.10.0-1160.99.1.el7.x86_64 #1 SMP Tue Aug 29 10:43:19 CDT 2023 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.9 (Nitrogen)
+DEBUG 2023-11-09 17:52:16.983 UTC: 	 Executing command: 'checkwrite'
+DEBUG 2023-11-09 17:52:16.985 UTC: 	 Found CRAB cache file /uscms/home/nvenkata/.crab3
+DEBUG 2023-11-09 17:52:23.406 UTC: 	 CRAB Client version: v3.231010
+DEBUG 2023-11-09 17:52:23.407 UTC: 	 Running on: Linux cmslpc143.fnal.gov 3.10.0-1160.99.1.el7.x86_64 #1 SMP Tue Aug 29 10:43:19 CDT 2023 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.9 (Nitrogen)
+DEBUG 2023-11-09 17:52:23.407 UTC: 	 Executing command: 'checkwrite'
+DEBUG 2023-11-09 17:52:23.407 UTC: 	 Found CRAB cache file /uscms/home/nvenkata/.crab3
+DEBUG 2023-11-09 17:52:23.411 UTC: 	 Checking credentials
+DEBUG 2023-11-09 17:52:23.413 UTC: 	 Found proxy file /uscms/home/nvenkata/x509up_u3683
+DEBUG 2023-11-09 17:52:23.413 UTC: 	 Making sure it has proper VOMS extension
+DEBUG 2023-11-09 17:52:23.413 UTC: 	 Executing command :
+ voms-proxy-info --vo --file /uscms/home/nvenkata/x509up_u3683
+DEBUG 2023-11-09 17:52:23.551 UTC: 	 output : cms
+
+ error: 
+ retcode : 0
+DEBUG 2023-11-09 17:52:23.551 UTC: 	 Getting proxy life time left
+DEBUG 2023-11-09 17:52:23.551 UTC: 	 Executing command :
+ voms-proxy-info --actimeleft --timeleft --file /uscms/home/nvenkata/x509up_u3683
+DEBUG 2023-11-09 17:52:23.579 UTC: 	 output : 688091
+688091
+
+ error: 
+ retcode : 0
+DEBUG 2023-11-09 17:52:23.579 UTC: 	 Proxy valid for 191:08:11 hours
+DEBUG 2023-11-09 17:52:23.579 UTC: 	 Command use: checkwrite
+DEBUG 2023-11-09 17:52:23.579 UTC: 	 Options use: ['--site', 'T3_US_FNALLPC']
+DEBUG 2023-11-09 17:52:23.579 UTC: 	 Instance is None
+DEBUG 2023-11-09 17:52:23.579 UTC: 	 Server base url is None
+DEBUG 2023-11-09 17:52:23.579 UTC: 	 Retrieving username ...
+DEBUG 2023-11-09 17:52:23.580 UTC: 	 Retrieving username from CRIC...
+DEBUG 2023-11-09 17:52:32.692 UTC: 	 username is nvenkata
+INFO 2023-11-09 17:52:32.693 UTC: 	 Will check write permission in the default location /store/user/<username>
+INFO 2023-11-09 17:52:32.693 UTC: 	 Validating LFN /store/user/nvenkata...
+INFO 2023-11-09 17:52:32.693 UTC: 	 LFN /store/user/nvenkata is valid.
+INFO 2023-11-09 17:52:32.745 UTC: 	 Will use `gfal-copy`, `gfal-rm` commands for checking write permissions
+INFO 2023-11-09 17:52:32.745 UTC: 	 Will check write permission in /store/user/nvenkata on site T3_US_FNALLPC
+INFO 2023-11-09 17:52:38.382 UTC: 	 Will use PFN: davs://cmseos.fnal.gov:9000/eos/uscms/store/user/nvenkata/crab3checkwrite_20231109_115232/crab3checkwrite_20231109_115232.tmp
+INFO 2023-11-09 17:52:38.382 UTC: 	 
+Attempting to create (dummy) directory crab3checkwrite_20231109_115232 and copy (dummy) file crab3checkwrite_20231109_115232.tmp to /store/user/nvenkata
+
+INFO 2023-11-09 17:52:38.386 UTC: 	 Executing command: which scram >/dev/null 2>&1 && eval `scram unsetenv -sh`; gfal-copy -p -v -t 180 file:///uscms/homes/n/nvenkata/DisplacedJets_New/CMSSW_13_0_13/src/DisplacedDJ_MiniAOD/DJAnalyzerMini/crab3checkwrite_20231109_115232.tmp 'davs://cmseos.fnal.gov:9000/eos/uscms/store/user/nvenkata/crab3checkwrite_20231109_115232/crab3checkwrite_20231109_115232.tmp'
+INFO 2023-11-09 17:52:38.386 UTC: 	 Please wait...
+INFO 2023-11-09 17:52:39.484 UTC: 	 
+Successfully created directory crab3checkwrite_20231109_115232 and copied file crab3checkwrite_20231109_115232.tmp to /store/user/nvenkata
+INFO 2023-11-09 17:52:39.484 UTC: 	 
+Attempting to delete file davs://cmseos.fnal.gov:9000/eos/uscms/store/user/nvenkata/crab3checkwrite_20231109_115232/crab3checkwrite_20231109_115232.tmp
+
+INFO 2023-11-09 17:52:39.484 UTC: 	 Executing command: which scram >/dev/null 2>&1 && eval `scram unsetenv -sh`; gfal-rm -v -t 180 'davs://cmseos.fnal.gov:9000/eos/uscms/store/user/nvenkata/crab3checkwrite_20231109_115232/crab3checkwrite_20231109_115232.tmp'
+INFO 2023-11-09 17:52:39.484 UTC: 	 Please wait...
+INFO 2023-11-09 17:52:40.463 UTC: 	 
+Successfully deleted file davs://cmseos.fnal.gov:9000/eos/uscms/store/user/nvenkata/crab3checkwrite_20231109_115232/crab3checkwrite_20231109_115232.tmp
+INFO 2023-11-09 17:52:40.464 UTC: 	 
+Attempting to delete directory davs://cmseos.fnal.gov:9000/eos/uscms/store/user/nvenkata/crab3checkwrite_20231109_115232/
+
+INFO 2023-11-09 17:52:40.464 UTC: 	 Executing command: which scram >/dev/null 2>&1 && eval `scram unsetenv -sh`; gfal-rm -r -v -t 180 'davs://cmseos.fnal.gov:9000/eos/uscms/store/user/nvenkata/crab3checkwrite_20231109_115232/'
+INFO 2023-11-09 17:52:40.464 UTC: 	 Please wait...
+INFO 2023-11-09 17:52:41.434 UTC: 	 
+Successfully deleted directory davs://cmseos.fnal.gov:9000/eos/uscms/store/user/nvenkata/crab3checkwrite_20231109_115232/
+INFO 2023-11-09 17:52:41.435 UTC: 	 
+Checkwrite Result:
+INFO 2023-11-09 17:52:41.435 UTC: 	 Success: Able to write in /store/user/nvenkata on site T3_US_FNALLPC
+DEBUG 2023-11-30 19:43:40.961 UTC: 	 CRAB Client version: v3.231010
+DEBUG 2023-11-30 19:43:40.961 UTC: 	 Running on: Linux cmslpc137.fnal.gov 3.10.0-1160.99.1.el7.x86_64 #1 SMP Tue Aug 29 10:43:19 CDT 2023 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.9 (Nitrogen)
+DEBUG 2023-11-30 19:43:40.961 UTC: 	 Executing command: 'checkwrite'
+DEBUG 2023-11-30 19:43:40.962 UTC: 	 Found CRAB cache file /uscms/home/nvenkata/.crab3
+DEBUG 2023-11-30 19:43:40.975 UTC: 	 Checking credentials
+DEBUG 2023-11-30 19:43:40.975 UTC: 	 Found proxy file /uscms/home/nvenkata/x509up_u3683
+DEBUG 2023-11-30 19:43:40.975 UTC: 	 Making sure it has proper VOMS extension
+DEBUG 2023-11-30 19:43:40.975 UTC: 	 Executing command :
+ voms-proxy-info --vo --file /uscms/home/nvenkata/x509up_u3683
+DEBUG 2023-11-30 19:43:41.037 UTC: 	 output : cms
+
+ error: 
+ retcode : 0
+DEBUG 2023-11-30 19:43:41.037 UTC: 	 Getting proxy life time left
+DEBUG 2023-11-30 19:43:41.037 UTC: 	 Executing command :
+ voms-proxy-info --actimeleft --timeleft --file /uscms/home/nvenkata/x509up_u3683
+DEBUG 2023-11-30 19:43:41.071 UTC: 	 output : 0
+0
+
+ error: 
+ retcode : 0
+DEBUG 2023-11-30 19:43:41.072 UTC: 	 Proxy valid for 00:00:00 hours
+DEBUG 2023-11-30 19:43:41.072 UTC: 	 Creating new proxy for 172:00 hours
+DEBUG 2023-11-30 19:43:41.072 UTC: 	 Executing command :
+ voms-proxy-init --rfc --cert ~/.globus/usercert.pem --key ~/.globus/userkey.pem --out /uscms/home/nvenkata/x509up_u3683 --valid 192:00 --voms cms:/cms
+DEBUG 2023-11-30 19:43:46.357 UTC: 	 output : 
+ error: 
+ retcode : 0
+DEBUG 2023-11-30 19:43:46.357 UTC: 	 Executing command :
+ voms-proxy-info --actimeleft --timeleft --file /uscms/home/nvenkata/x509up_u3683
+DEBUG 2023-11-30 19:43:46.389 UTC: 	 output : 691200
+691200
+
+ error: 
+ retcode : 0
+DEBUG 2023-11-30 19:43:46.389 UTC: 	 Proxy created.
+DEBUG 2023-11-30 19:43:46.390 UTC: 	 Command use: checkwrite
+DEBUG 2023-11-30 19:43:46.390 UTC: 	 Options use: ['--s', 'T3_US_FNALLPC']
+DEBUG 2023-11-30 19:43:46.390 UTC: 	 Instance is None
+DEBUG 2023-11-30 19:43:46.390 UTC: 	 Server base url is None
+DEBUG 2023-11-30 19:43:46.390 UTC: 	 Retrieving username ...
+DEBUG 2023-11-30 19:43:46.390 UTC: 	 Retrieving username from CRIC...
+DEBUG 2023-11-30 19:43:48.033 UTC: 	 username is nvenkata
+INFO 2023-11-30 19:43:48.034 UTC: 	 Will check write permission in the default location /store/user/<username>
+INFO 2023-11-30 19:43:48.034 UTC: 	 Validating LFN /store/user/nvenkata...
+INFO 2023-11-30 19:43:48.034 UTC: 	 LFN /store/user/nvenkata is valid.
+INFO 2023-11-30 19:43:48.058 UTC: 	 Will use `gfal-copy`, `gfal-rm` commands for checking write permissions
+INFO 2023-11-30 19:43:48.059 UTC: 	 Will check write permission in /store/user/nvenkata on site T3_US_FNALLPC
+INFO 2023-11-30 19:43:51.225 UTC: 	 Will use PFN: davs://cmseos.fnal.gov:9000/eos/uscms/store/user/nvenkata/crab3checkwrite_20231130_134348/crab3checkwrite_20231130_134348.tmp
+INFO 2023-11-30 19:43:51.225 UTC: 	 
+Attempting to create (dummy) directory crab3checkwrite_20231130_134348 and copy (dummy) file crab3checkwrite_20231130_134348.tmp to /store/user/nvenkata
+
+INFO 2023-11-30 19:43:51.231 UTC: 	 Executing command: which scram >/dev/null 2>&1 && eval `scram unsetenv -sh`; gfal-copy -p -v -t 180 file:///uscms_data/d3/nvenkata/DisplacedJets_New/CMSSW_13_0_13/src/DisplacedDJ_MiniAOD/DJAnalyzerMini/crab3checkwrite_20231130_134348.tmp 'davs://cmseos.fnal.gov:9000/eos/uscms/store/user/nvenkata/crab3checkwrite_20231130_134348/crab3checkwrite_20231130_134348.tmp'
+INFO 2023-11-30 19:43:51.231 UTC: 	 Please wait...
+INFO 2023-11-30 19:43:52.538 UTC: 	 
+Successfully created directory crab3checkwrite_20231130_134348 and copied file crab3checkwrite_20231130_134348.tmp to /store/user/nvenkata
+INFO 2023-11-30 19:43:52.538 UTC: 	 
+Attempting to delete file davs://cmseos.fnal.gov:9000/eos/uscms/store/user/nvenkata/crab3checkwrite_20231130_134348/crab3checkwrite_20231130_134348.tmp
+
+INFO 2023-11-30 19:43:52.538 UTC: 	 Executing command: which scram >/dev/null 2>&1 && eval `scram unsetenv -sh`; gfal-rm -v -t 180 'davs://cmseos.fnal.gov:9000/eos/uscms/store/user/nvenkata/crab3checkwrite_20231130_134348/crab3checkwrite_20231130_134348.tmp'
+INFO 2023-11-30 19:43:52.538 UTC: 	 Please wait...
+INFO 2023-11-30 19:43:53.666 UTC: 	 
+Successfully deleted file davs://cmseos.fnal.gov:9000/eos/uscms/store/user/nvenkata/crab3checkwrite_20231130_134348/crab3checkwrite_20231130_134348.tmp
+INFO 2023-11-30 19:43:53.666 UTC: 	 
+Attempting to delete directory davs://cmseos.fnal.gov:9000/eos/uscms/store/user/nvenkata/crab3checkwrite_20231130_134348/
+
+INFO 2023-11-30 19:43:53.666 UTC: 	 Executing command: which scram >/dev/null 2>&1 && eval `scram unsetenv -sh`; gfal-rm -r -v -t 180 'davs://cmseos.fnal.gov:9000/eos/uscms/store/user/nvenkata/crab3checkwrite_20231130_134348/'
+INFO 2023-11-30 19:43:53.667 UTC: 	 Please wait...
+INFO 2023-11-30 19:43:54.759 UTC: 	 
+Successfully deleted directory davs://cmseos.fnal.gov:9000/eos/uscms/store/user/nvenkata/crab3checkwrite_20231130_134348/
+INFO 2023-11-30 19:43:54.761 UTC: 	 
+Checkwrite Result:
+INFO 2023-11-30 19:43:54.761 UTC: 	 Success: Able to write in /store/user/nvenkata on site T3_US_FNALLPC
+DEBUG 2023-12-01 18:11:44.736 UTC: 	 CRAB Client version: v3.231010
+DEBUG 2023-12-01 18:11:44.736 UTC: 	 Running on: Linux cmslpc103.fnal.gov 3.10.0-1160.99.1.el7.x86_64 #1 SMP Tue Aug 29 10:43:19 CDT 2023 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.9 (Nitrogen)
+DEBUG 2023-12-01 18:11:44.736 UTC: 	 Executing command: 'resubmit'
+DEBUG 2023-12-01 18:11:44.737 UTC: 	 Found CRAB cache file /uscms/home/nvenkata/.crab3
+DEBUG 2023-12-01 18:11:57.382 UTC: 	 CRAB Client version: v3.231010
+DEBUG 2023-12-01 18:11:57.383 UTC: 	 Running on: Linux cmslpc103.fnal.gov 3.10.0-1160.99.1.el7.x86_64 #1 SMP Tue Aug 29 10:43:19 CDT 2023 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.9 (Nitrogen)
+DEBUG 2023-12-01 18:11:57.383 UTC: 	 Executing command: 'resubmit'
+DEBUG 2023-12-01 18:11:57.383 UTC: 	 Found CRAB cache file /uscms/home/nvenkata/.crab3
+DEBUG 2024-01-08 17:37:12.216 UTC: 	 CRAB Client version: v3.231101
+DEBUG 2024-01-08 17:37:12.217 UTC: 	 Running on: Linux cmslpc147.fnal.gov 3.10.0-1160.99.1.el7.x86_64 #1 SMP Tue Aug 29 10:43:19 CDT 2023 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.9 (Nitrogen)
+DEBUG 2024-01-08 17:37:12.217 UTC: 	 Executing command: 'submit'
+DEBUG 2024-01-08 17:37:12.217 UTC: 	 Found CRAB cache file /uscms/home/nvenkata/.crab3
+INFO 2024-01-08 17:37:12.219 UTC: 	 Will use CRAB configuration file myCrab_cfg_ggH_HSS.py
+DEBUG 2024-01-08 17:37:12.219 UTC: 	 Loading CRAB configuration file.
+DEBUG 2024-01-08 17:37:12.222 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2024-01-08 17:37:12.223 UTC: 	 Working area '/uscms_data/d3/nvenkata/DisplacedJets_New/CMSSW_13_0_13/src/DisplacedDJ_MiniAOD/DJAnalyzerMini/crab_projects/crab_MC_Run3_2022_realistic_promptTagTest_0801' already exists 
+Please change the requestName in the config file
+ERROR 2024-01-08 17:37:12.223 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231101.00/bin/crab.py", line 152, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231101.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231101.00/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231101.00/lib/CRABClient/Commands/SubCommand.py", line 321, in __init__
+    self.requestarea, self.requestname, self.logfile = createWorkArea(
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231101.00/lib/CRABClient/ClientUtilities.py", line 390, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+CRABClient.ClientExceptions.ConfigException: Working area '/uscms_data/d3/nvenkata/DisplacedJets_New/CMSSW_13_0_13/src/DisplacedDJ_MiniAOD/DJAnalyzerMini/crab_projects/crab_MC_Run3_2022_realistic_promptTagTest_0801' already exists 
+Please change the requestName in the config file
+INFO 2024-01-08 17:37:12.226 UTC: 	 Log file is /uscms_data/d3/nvenkata/DisplacedJets_New/CMSSW_13_0_13/src/DisplacedDJ_MiniAOD/DJAnalyzerMini/crab.log
+DEBUG 2024-01-08 17:38:05.245 UTC: 	 CRAB Client version: v3.231101
+DEBUG 2024-01-08 17:38:05.245 UTC: 	 Running on: Linux cmslpc147.fnal.gov 3.10.0-1160.99.1.el7.x86_64 #1 SMP Tue Aug 29 10:43:19 CDT 2023 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.9 (Nitrogen)
+DEBUG 2024-01-08 17:38:05.245 UTC: 	 Executing command: 'submit'
+DEBUG 2024-01-08 17:38:05.245 UTC: 	 Found CRAB cache file /uscms/home/nvenkata/.crab3
+INFO 2024-01-08 17:38:05.247 UTC: 	 Will use CRAB configuration file myCrab_cfg_ggH_HSS.py
+DEBUG 2024-01-08 17:38:05.247 UTC: 	 Loading CRAB configuration file.
+DEBUG 2024-01-08 17:38:05.248 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2024-01-08 17:38:05.249 UTC: 	 Working area '/uscms_data/d3/nvenkata/DisplacedJets_New/CMSSW_13_0_13/src/DisplacedDJ_MiniAOD/DJAnalyzerMini/crab_projects/crab_MC_Run3_2022_realistic_promptTagTest_0801' already exists 
+Please change the requestName in the config file
+ERROR 2024-01-08 17:38:05.249 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231101.00/bin/crab.py", line 152, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231101.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231101.00/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231101.00/lib/CRABClient/Commands/SubCommand.py", line 321, in __init__
+    self.requestarea, self.requestname, self.logfile = createWorkArea(
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231101.00/lib/CRABClient/ClientUtilities.py", line 390, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+CRABClient.ClientExceptions.ConfigException: Working area '/uscms_data/d3/nvenkata/DisplacedJets_New/CMSSW_13_0_13/src/DisplacedDJ_MiniAOD/DJAnalyzerMini/crab_projects/crab_MC_Run3_2022_realistic_promptTagTest_0801' already exists 
+Please change the requestName in the config file
+INFO 2024-01-08 17:38:05.252 UTC: 	 Log file is /uscms_data/d3/nvenkata/DisplacedJets_New/CMSSW_13_0_13/src/DisplacedDJ_MiniAOD/DJAnalyzerMini/crab.log
+DEBUG 2024-01-10 18:41:56.621 UTC: 	 CRAB Client version: v3.231101
+DEBUG 2024-01-10 18:41:56.622 UTC: 	 Running on: Linux cmslpc170.fnal.gov 3.10.0-1160.99.1.el7.x86_64 #1 SMP Tue Aug 29 10:43:19 CDT 2023 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.9 (Nitrogen)
+DEBUG 2024-01-10 18:41:56.622 UTC: 	 Executing command: 'status'
+DEBUG 2024-01-10 18:41:56.622 UTC: 	 Found CRAB cache file /uscms/home/nvenkata/.crab3
+DEBUG 2024-01-10 18:42:43.643 UTC: 	 CRAB Client version: v3.231101
+DEBUG 2024-01-10 18:42:43.644 UTC: 	 Running on: Linux cmslpc170.fnal.gov 3.10.0-1160.99.1.el7.x86_64 #1 SMP Tue Aug 29 10:43:19 CDT 2023 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.9 (Nitrogen)
+DEBUG 2024-01-10 18:42:43.644 UTC: 	 Executing command: 'resubmit'
+DEBUG 2024-01-10 18:42:43.647 UTC: 	 Found CRAB cache file /uscms/home/nvenkata/.crab3
+DEBUG 2024-01-10 18:44:51.870 UTC: 	 CRAB Client version: v3.231101
+DEBUG 2024-01-10 18:44:51.870 UTC: 	 Running on: Linux cmslpc170.fnal.gov 3.10.0-1160.99.1.el7.x86_64 #1 SMP Tue Aug 29 10:43:19 CDT 2023 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.9 (Nitrogen)
+DEBUG 2024-01-10 18:44:51.870 UTC: 	 Executing command: 'resubmit'
+DEBUG 2024-01-10 18:44:51.871 UTC: 	 Found CRAB cache file /uscms/home/nvenkata/.crab3
+ERROR 2024-01-10 18:44:51.872 UTC: 	 Error: ir is not a valid CRAB project directory.
+ERROR 2024-01-10 18:44:51.872 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231101.00/bin/crab.py", line 152, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231101.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231101.00/lib/CRABClient/Commands/resubmit.py", line 30, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231101.00/lib/CRABClient/Commands/SubCommand.py", line 278, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231101.00/lib/CRABClient/Commands/SubCommand.py", line 663, in validateOptions
+    raise ConfigurationException(msg)
+CRABClient.ClientExceptions.ConfigurationException: [91mError[0m: ir is not a valid CRAB project directory.
+INFO 2024-01-10 18:44:51.874 UTC: 	 Log file is /uscms_data/d3/nvenkata/DisplacedJets_New/CMSSW_13_0_13/src/DisplacedDJ_MiniAOD/DJAnalyzerMini/crab.log
+DEBUG 2024-01-10 18:45:07.640 UTC: 	 CRAB Client version: v3.231101
+DEBUG 2024-01-10 18:45:07.640 UTC: 	 Running on: Linux cmslpc170.fnal.gov 3.10.0-1160.99.1.el7.x86_64 #1 SMP Tue Aug 29 10:43:19 CDT 2023 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.9 (Nitrogen)
+DEBUG 2024-01-10 18:45:07.640 UTC: 	 Executing command: 'resubmit'
+DEBUG 2024-01-10 18:45:07.643 UTC: 	 Found CRAB cache file /uscms/home/nvenkata/.crab3
+ERROR 2024-01-10 18:45:07.648 UTC: 	 Error: ir is not a valid CRAB project directory.
+ERROR 2024-01-10 18:45:07.648 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231101.00/bin/crab.py", line 152, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231101.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231101.00/lib/CRABClient/Commands/resubmit.py", line 30, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231101.00/lib/CRABClient/Commands/SubCommand.py", line 278, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231101.00/lib/CRABClient/Commands/SubCommand.py", line 663, in validateOptions
+    raise ConfigurationException(msg)
+CRABClient.ClientExceptions.ConfigurationException: [91mError[0m: ir is not a valid CRAB project directory.
+INFO 2024-01-10 18:45:07.650 UTC: 	 Log file is /uscms_data/d3/nvenkata/DisplacedJets_New/CMSSW_13_0_13/src/DisplacedDJ_MiniAOD/DJAnalyzerMini/crab.log
+DEBUG 2024-01-10 18:45:28.515 UTC: 	 CRAB Client version: v3.231101
+DEBUG 2024-01-10 18:45:28.516 UTC: 	 Running on: Linux cmslpc170.fnal.gov 3.10.0-1160.99.1.el7.x86_64 #1 SMP Tue Aug 29 10:43:19 CDT 2023 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.9 (Nitrogen)
+DEBUG 2024-01-10 18:45:28.516 UTC: 	 Executing command: 'resubmit'
+DEBUG 2024-01-10 18:45:28.518 UTC: 	 Found CRAB cache file /uscms/home/nvenkata/.crab3
+ERROR 2024-01-10 18:45:28.522 UTC: 	 Error: ir is not a valid CRAB project directory.
+ERROR 2024-01-10 18:45:28.522 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231101.00/bin/crab.py", line 152, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231101.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231101.00/lib/CRABClient/Commands/resubmit.py", line 30, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231101.00/lib/CRABClient/Commands/SubCommand.py", line 278, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.231101.00/lib/CRABClient/Commands/SubCommand.py", line 663, in validateOptions
+    raise ConfigurationException(msg)
+CRABClient.ClientExceptions.ConfigurationException: [91mError[0m: ir is not a valid CRAB project directory.
+INFO 2024-01-10 18:45:28.524 UTC: 	 Log file is /uscms_data/d3/nvenkata/DisplacedJets_New/CMSSW_13_0_13/src/DisplacedDJ_MiniAOD/DJAnalyzerMini/crab.log

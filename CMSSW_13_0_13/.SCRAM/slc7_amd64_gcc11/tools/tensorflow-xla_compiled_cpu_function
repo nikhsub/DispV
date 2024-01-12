@@ -1,0 +1,10 @@
+{
+  "LIB": [
+    "xla_compiled_cpu_function"
+  ],
+  "TOOLNAME": "tensorflow-xla_compiled_cpu_function",
+  "TOOLVERSION": "2.6.4-15a4f723d88c0a80e4a073142f68de75",
+  "USE": [
+    "tensorflow"
+  ]
+}

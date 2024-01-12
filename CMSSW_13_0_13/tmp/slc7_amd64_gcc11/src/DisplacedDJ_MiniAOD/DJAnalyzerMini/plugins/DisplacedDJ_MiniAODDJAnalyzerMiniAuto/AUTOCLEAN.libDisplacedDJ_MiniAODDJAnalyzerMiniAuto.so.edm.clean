@@ -1,0 +1,2 @@
+01:/usr/bin/rm -f lib/slc7_amd64_gcc11/pluginDisplacedDJ_MiniAODDJAnalyzerMiniAuto.so lib/slc7_amd64_gcc11/DisplacedDJ_MiniAODDJAnalyzerMiniAuto.edmplugin
+90:edmPluginRefresh lib/slc7_amd64_gcc11

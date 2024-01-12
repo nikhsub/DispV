@@ -1,0 +1,49 @@
+{
+  "BUILDPRODUCTS": {
+    "LIBRARY": {
+      "DisplacedDJ_MiniAODDJAnalyzerMiniAuto": {
+        "FILES": "",
+        "TYPE": "lib"
+      }
+    }
+  },
+  "FLAGS": {
+    "EDM_PLUGIN": [
+      "1"
+    ]
+  },
+  "USE": [
+    "FWCore/Framework",
+    "FWCore/PluginManager",
+    "FWCore/ParameterSet",
+    "PhysicsTools/TensorFlow",
+    "DataFormats/TrackReco",
+    "DataFormats/HLTReco",
+    "DataFormats/PatCandidates",
+    "DataFormats/GeometryCommonDetAlgo",
+    "DataFormats/HepMCCandidate",
+    "DataFormats/JetReco",
+    "DataFormats/BTauReco",
+    "DataFormats/Math",
+    "DataFormats/Common",
+    "PhysicsTools/UtilAlgos",
+    "PhysicsTools/RecoUtils",
+    "FWCore/ServiceRegistry",
+    "SimTracker/TrackAssociation",
+    "SimTracker/Records",
+    "HLTrigger/HLTcore",
+    "RecoVertex/VertexPrimitives",
+    "TrackingTools/TransientTrack",
+    "TrackingTools/Records",
+    "TrackingTools/IPTools",
+    "RecoVertex/ConfigurableVertexReco",
+    "RecoVertex/AdaptiveVertexFinder",
+    "SimDataFormats/PileupSummaryInfo",
+    "SimDataFormats/GeneratorProducts",
+    "CondFormats/JetMETObjects",
+    "JetMETCorrections/Objects",
+    "JetMETCorrections/JetCorrector",
+    "JetMETCorrections/Modules",
+    "lhapdf"
+  ]
+}

@@ -1,0 +1,2 @@
+ALL_PACKAGES += DisplacedDJ_MiniAOD/DataFormats
+subdirs_src_DisplacedDJ_MiniAOD_DataFormats := src_DisplacedDJ_MiniAOD_DataFormats_src
