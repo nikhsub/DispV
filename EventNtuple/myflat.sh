@@ -23,7 +23,8 @@ rm -r CMSSW_13_0_13
 
 export LD_LIBRARY_PATH=$ROOTSYS/lib/:$LD_LIBRARY_PATH
 echo $LD_LIBRARY_PATH
-python $1 -f $2 -o $3 $5 $6
+#python $1 -f $2 -o $3 $5 $6
+python $1 -f $2 -o $3 $5 $6 $7 $8
 #rm Material
 #xrdcp *.root root://cmseos.fnal.gov/$4
 #scp *.root $4

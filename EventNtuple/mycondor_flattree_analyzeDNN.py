@@ -16,8 +16,8 @@ parser.add_argument("-a","--abs", default=True, action="store_true", help="use a
 parser.add_argument("-e","--eos", default="", help="EOS path to copy to")
 parser.add_argument("-p", "--perjob", default=10, type=int, help="Files per job")
 parser.add_argument("-r", "--random", default=False, action="store_true", help="use randomly selected dijet candidate")
-#parser.add_argument("-s", "--slim", default=False, action="store_true", help="only save part of the branches to save data size")
-#parser.add_argument("-c", "--cut", default=False, action="store_true", help="apply preselections")
+parser.add_argument("-s", "--slim", default=False, action="store_true", help="only save part of the branches to save data size")
+parser.add_argument("-c", "--cut", default=False, action="store_true", help="apply preselections")
 
 args=parser.parse_args()
 
@@ -25,7 +25,7 @@ current=os.getcwd()
 basefolder=args.input
 bashjob="myflat.sh"
 pathbashjob="{0}/{1}".format(current, bashjob)
-pyscript="EventNtuple_newPtrk.py"
+pyscript="EventNtuple_DNNp.py"
 pathpyscript="{0}/{1}".format(current, pyscript)
 eospath = args.eos
 nperj = args.perjob
@@ -83,15 +83,15 @@ for key in filegroups.keys():
     else:
         TRIG = ""
 
-#    if args.slim:
-#	SLIM = "--slim"
-#    else:
-#	SLIM = ""
-#    
-#    if args.cut:
-#	CUT = "--cut"
-#    else:
-#	CUT = ""
+    if args.slim:
+	SLIM = "--slim"
+    else:
+	SLIM = ""
+    
+    if args.cut:
+	CUT = "--cut"
+    else:
+	CUT = ""
 
 
     condor_filename="analyze_condor_{0}".format(folder0)
@@ -109,8 +109,8 @@ for key in filegroups.keys():
     if args.abs:
         #rootfile="root://cmsxrootd.fnal.gov/"+rootfile
         #fcondor.write("Arguments = {0} {1} {2} {3} {4} {5} {6}\n".format(pyscript, filegroups[key], folder0, eospath, current+"/"+folder, RANDOM, TRIG))
-	fcondor.write("Arguments = {0} {1} {2} {3} {4} {5}\n".format(pyscript, filegroups[key], folder0, current+"/"+folder, RANDOM, TRIG)) 
-	#fcondor.write("Arguments = {0} {1} {2} {3} {4} {5} {6} {7}\n".format(pyscript, filegroups[key], folder0, current+"/"+folder, RANDOM, TRIG, SLIM, CUT)) 
+	#fcondor.write("Arguments = {0} {1} {2} {3} {4} {5}\n".format(pyscript, filegroups[key], folder0, current+"/"+folder, RANDOM, TRIG)) 
+	fcondor.write("Arguments = {0} {1} {2} {3} {4} {5} {6} {7}\n".format(pyscript, filegroups[key], folder0, current+"/"+folder, RANDOM, TRIG, SLIM, CUT)) 
  
     else:
         fcondor.write("Arguments = {0} {1} {2} {3} {4} {5} {6}\n".format(pyscript, current+"/"+rootfile, folder0,eospath, current+"/"+folder, RANDOM, TRIG))

@@ -1,7 +1,7 @@
 from CRABClient.UserUtilities import config#, getUsernameFromSiteDB
 config = config()
 
-config.General.requestName = 'MC_Run3_2022_realistic_newDispGraph_1001'
+config.General.requestName = 'MC_sig_oldTaggers_1701'
 config.General.workArea = 'crab_projects'
 config.General.transferOutputs = True
 config.General.transferLogs = False
@@ -19,7 +19,7 @@ config.Data.unitsPerJob = 1
 #config.Data.totalUnits = config.Data.unitsPerJob * NJOBS
 #config.Data.outLFNDirBase = '/store/group/lpcbril/data_DisplacedJet_Run3'
 config.Data.publication = False
-config.Data.outputDatasetTag = 'test_1001_myDispTagger'
+config.Data.outputDatasetTag = 'test_1701_oldTaggers'
 
 config.Site.storageSite = 'T3_US_FNALLPC'
 #config.Site.whitelist=['T2_CH_CERN','T2_IT_Pisa','T2_UK_London_IC','T2_HU_Budapest']
